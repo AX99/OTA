@@ -35,7 +35,7 @@ const Services = () => {
         <SectionHeading
           sx={styles.heading}
           title="What We Do"
-          description="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
+          description="Rather than being a trend, we live and breath inclusion and this is at the forefront of everything One Twelve agency stands for."
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
