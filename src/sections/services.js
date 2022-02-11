@@ -30,7 +30,7 @@ const data = [
 
 const Services = () => {
   return (
-    <Box as="section" id="services" sx={styles.section}>
+    <Box as="section" id="what-we-do" sx={styles.section}>
       <Container>
         <SectionHeading
           sx={styles.heading}
