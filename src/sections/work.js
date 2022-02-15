@@ -8,56 +8,11 @@ import SectionHeading from "components/section-heading";
 import data, {brands} from "../test-data";
 import Test from "../components/tabbed";
 
-const datla = [
-  {
-    id: 1,
-    tabTitle: "Why you choose our service?",
-    title: `We will turn your idea in the successful business model framework`,
-    description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
-    moreLink: "#explore-more",
-    image: tabImage1,
-    list: [
-      "Medical and vision",
-      "Life insurance",
-      "HSAs and FSAs",
-      "Commuter benefits",
-    ],
-  },
-  {
-    id: 2,
-    tabTitle: "What’s our business promise?",
-    title: `We will turn your idea in the successful business model framework`,
-    description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
-    moreLink: "#explore-more",
-    image: tabImage1,
-    list: [
-      "Medical and vision",
-      "Life insurance",
-      "HSAs and FSAs",
-      "Commuter benefits",
-    ],
-  },
-  {
-    id: 3,
-    tabTitle: "What’s our role model plan?",
-    title: `We will turn your idea in the successful business model framework`,
-    description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
-    moreLink: "#explore-more",
-    image: tabImage1,
-    list: [
-      "Medical and vision",
-      "Life insurance",
-      "HSAs and FSAs",
-      "Commuter benefits",
-    ],
-  },
-];
-
 const Work = () => {
   return (
     <Box as="section" id="work" sx={styles.section}>
       <Box sx={styles.sectionHead}>
-        <SectionHeading title="Work" description="Work subheading" />
+        <SectionHeading title="Work" description="Brands we've worked with" />
       </Box>
       <Container xs={12} md={6}>
         <Tabs sx={styles.tabs} animated={{ tabPane: true }}>
@@ -194,7 +149,7 @@ const styles = {
     justifyContent: "center",
     textAlign: [null, null, null, null, null, "center"],
     img: {
-      maxWidth: ["65%", null, null, "100%", null, "75%", "75%"],
+      maxWidth: ["40%", null, null, "50%", null, "50%", "50%"],
     },
   },
 };

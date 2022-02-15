@@ -7,17 +7,22 @@ import TabPane from "@material-tailwind/react/TabPane";
 
 export default function Test({data, mainTab}) {
     const [openTab, setOpenTab] = useState("");
-    const tabNames = ['objective', 'solution', 'result']
+    const [openPane, setOpenPane] = useState(0);
+    const tabNames = ['objective', 'solution', 'result'];
+    let counter = mainTab;
+
+    counter--;
 
     return (
         <Tab>
             <TabList color="lightBlue">
-            {tabNames.map((item) => (
+            {tabNames.map((item, i) => (
                 <TabItem
-                    key={item}
+                    key={i}
                     onClick={(e) => {
                         e.preventDefault();
                         setOpenTab(item);
+                        setOpenPane(i);
                     }}
                     ripple="light"
                     active={openTab === item ? true : false}
@@ -29,12 +34,12 @@ export default function Test({data, mainTab}) {
             ))}
             </TabList>
             <TabContent>
-            {data[mainTab--].project?.map((pane, i) => (
-                <TabPane key={i} active={openTab == "Objective" ? true : false}>
+            {data[counter].project?.map((pane, i) => (
+                <TabPane key={i} active={openTab === "objective" ? true : false}>
                     <p>
-                    here
-                    {console.log(mainTab)}
-                    {pane[openTab]}
+                    {pane[openPane]}
+                    {/* {console.log(openPane + ": pane")}
+                    {console.log(openTab + ": tab")} */}
                     </p>
                 </TabPane>
             ))}

@@ -54,6 +54,8 @@ const styles = {
     backgroundColor: rgba('#FFF5ED', 0.5),
     pt: [11, 11, 11, 12, 12, 12, 14],
     pb: [7, 7, 7, 9, 9, 10, 11],
+    borderBottom: '1px solid #D9E0E7',
+    minHeight: '100vh',
   },
   heading: {
     maxWidth: [null, null, null, 455, 660],

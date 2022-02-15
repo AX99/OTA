@@ -8,11 +8,13 @@ import converse  from "./assets/images/logos/converse.png";
 import ej  from "./assets/images/logos/ej.jpeg";
 import hp1  from "./assets/images/logos/hp1.png";
 import lv  from "./assets/images/logos/lv.png";
+import hennessy from "./assets/images/logos/hennessy.png"
+import lut from "./assets/images/logos/linkup.png"
 
 const data = [
   {
     id: 1,
-    logo: "",
+    logo: lut,
     image: "tabImage1",
     brandName: "Linkup TV",
     name: "Link Up TV Music Conference in partnership with Footasylum",
@@ -66,7 +68,7 @@ const data = [
   },
   {
     id: 3,
-    logo: "",
+    logo: hennessy,
     image: "tabImage1",
     brandName: "Hennessy",
     name: "Hennessy at Abbey Road Studios with ProducerWez",
@@ -95,52 +97,52 @@ export default data;
 export const brands = [
   {
     id: 1,
-    icon: tf,
-    title: "Tom Ford",
-  },
-  {
-    id: 2,
-    icon: ss,
-    title: "Shake Shack",
-  },
-  {
-    id: 3,
-    icon: mac,
-    title: "Mac",
-  },
-  {
-    id: 4,
     icon: adidas1,
     title: "Adidas",
   },
   {
-    id: 5,
+    id: 2,
     icon: amazon1,
     title: "Amazon",
   },
   {
-    id: 6,
+    id: 3,
     icon: asos,
     title: "ASOS",
   },
   {
-    id: 7,
+    id: 4,
     icon: converse,
     title: "Converse",
   },
   {
-    id: 8,
+    id: 5,
     icon: ej,
     title: "E&J",
   },
   {
-    id: 9,
+    id: 6,
     icon: hp1,
     title: "HP",
   },
   {
-    id: 10,
+    id: 7,
     icon: lv,
     title: "LV",
+  },
+  {
+    id: 8,
+    icon: mac,
+    title: "Mac",
+  },
+  {
+    id: 9,
+    icon: ss,
+    title: "Shake Shack",
+  },
+  {
+    id: 10,
+    icon: tf,
+    title: "Tom Ford",
   },
 ]
