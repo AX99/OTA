@@ -15,7 +15,7 @@ export default function Footer() {
           <Box sx={styles.about}>
             <Box sx={styles.logo}>
               {/* <Logo /> */}
-              <img src={logo} height="50px" alt='logo'/>
+              <img src={logo} sx={styles.image} alt='logo'/>
             </Box>
             <Box sx={styles.terms}>
               <Link path="#!">Terms of use</Link>
@@ -67,8 +67,11 @@ const styles = {
   },
   logo: {
     display: ['flex'],
-    justifyContent: ['center', null, null, 'unset'],
+    justifyContent: ['center', null, null, 'center'],
     gridColumn: '1/2',
+  },
+  image:{
+    height: '50px',
   },
   terms: {
     display: ['flex'],

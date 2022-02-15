@@ -3,11 +3,10 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import Services from 'sections/services';
-// import Testimonials from 'sections/testimonials';
-// import OurTeam from 'sections/our-team';
-// import OtherServices from 'sections/other-services';
-// import WhyUs from 'sections/why-us';
+import AboutUs from '../sections/about-us';
+import Work from 'sections/work';
 import SubscribeUs from 'sections/subscribe-us';
+import "@material-tailwind/react/tailwind.css";
 import 'rc-tabs/assets/index.css';
 import 'swiper/swiper-bundle.min.css';
 
@@ -16,11 +15,9 @@ export default function IndexPage() {
     <Layout>
       <SEO title="One Twelve Agency" />
       <Banner />
+      <AboutUs />
       <Services />
-      {/* <Testimonials /> */}
-      {/* <OurTeam /> */}
-      {/* <OtherServices /> */}
-      {/* <WhyUs /> */}
+      <Work />
       <SubscribeUs />
     </Layout>
   );

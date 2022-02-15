@@ -1,28 +1,29 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Button, Image } from 'theme-ui';
 import { rgba } from 'polished';
-import SectionHeading from 'components/section-heading';
+// import SectionHeading from 'components/section-heading';
 // import illustration from 'assets/images/banner-illustration.png';
 import illustration from 'assets/images/icons/favicon.png';
 import illustration_logo from 'assets/images/logos/logo.png';
 
 const Banner = () => {
   return (
-    <Box as="section" id="home" sx={styles.section}>
+    <Box as="section" id="home" className="shadow-md" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.illustration}>
-            <Image src={illustration} alt="illustration" />
+            <Image src={illustration} alt="illustration" sx={styles.illustration.img}/>
             <Image src={illustration_logo} alt="illustration logo" sx={styles.illustration.img_logo} />
           </Box>
-          <SectionHeading
+          {/* <SectionHeading
             sx={styles.heading}
             title="One Twelve Agency"
             description="Black and Brown Female owned brand partnerships agency, properly representing real and diverse lifestyles and cultures."
-          />
+          /> */}
+
           <Box sx={styles.illustration}>
             <Box sx={styles.buttonWrapper}>
-              <Button>Get Started</Button>
+              <Button onclick="#work">Get Started</Button>
             </Box>
           </Box>
         </Box>
@@ -41,7 +42,7 @@ const styles = {
     pb: [8, null, null, 0],
     zIndex: 0,
     ':before': {
-      backgroundColor: rgba('#FFF5ED', 0.5),
+      backgroundColor: rgba('#FFF', 0.5),
       content: ['none', null, null, `''`],
       position: 'absolute',
       left: 0,
@@ -76,12 +77,12 @@ const styles = {
     display: ['block', null, 'flex', 'flex'],
     position: 'relative',
     img_logo: {
-      display: ['none', null, 'block', 'block'],
+      display: ['none', 'none', 'block', 'block'],
       maxWidth: [null, null, '75%', '75%'],
       m: ['0 auto'],
     },
     img: {
-      display: ['block', 'block', null, null],
+      display: ['block', 'block', 'none', 'none'],
       maxWidth: ['25%', '25%', null, null],
       m: ['0 auto'],
     },
