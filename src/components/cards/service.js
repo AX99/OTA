@@ -28,6 +28,7 @@ const styles = {
     minWidth: [88, null, null, null, null, 70, 88],
     mr: [null, null, null, null, null, 30],
     mb: [2, null, null, null, null, 0],
+    textAlign: "-webkit-center",
     img: {
       maxWidth: [42, null, null, 60, 70, '100%'],
     },
