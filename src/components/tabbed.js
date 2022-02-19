@@ -6,12 +6,9 @@ import TabContent from "@material-tailwind/react/TabContent";
 import TabPane from "@material-tailwind/react/TabPane";
 
 export default function Test({data, mainTab}) {
-    const [openTab, setOpenTab] = useState("");
-    const [openPane, setOpenPane] = useState(0);
-    const tabNames = ['objective', 'solution', 'result'];
-    let counter = mainTab;
+    const [openTab, setOpenTab] = useState('objective');
+    const tabNames = ['Objective', 'Solution', 'Result'];
 
-    counter--;
 
     return (
         <Tab>
@@ -21,8 +18,7 @@ export default function Test({data, mainTab}) {
                     key={i}
                     onClick={(e) => {
                         e.preventDefault();
-                        setOpenTab(item);
-                        setOpenPane(i);
+                        setOpenTab(item.toLowerCase());
                     }}
                     ripple="light"
                     active={openTab === item ? true : false}
@@ -34,25 +30,13 @@ export default function Test({data, mainTab}) {
             ))}
             </TabList>
             <TabContent>
-            {data[counter].project?.map((pane, i) => (
-                <TabPane key={i} active={openTab === "objective" ? true : false}>
+            {data[mainTab].project?.map((pane, i) => (
+                <TabPane key={i} active={Object.keys(pane) !== null ? true : false}>
                     <p>
-                    {pane[openPane]}
-                    {/* {console.log(openPane + ": pane")}
-                    {console.log(openTab + ": tab")} */}
+                    {pane[openTab] !== null ? pane[openTab] : null}
                     </p>
                 </TabPane>
             ))}
-                {/* <TabPane active={openTab === 2 ? true : false}>
-                    <p>
-                    We worked with Link Up TV on the creative ideation of the conference and booked and managed guests and talent including record label heads, artists, producers and presenters.
-                    </p>
-                </TabPane>
-                <TabPane active={openTab === 3 ? true : false}>
-                    <p>
-                    Sold out event with over 500 attendees including household names, brand awareness, and positive brand perception for Link up TV. Exceeded KPIs set on all social platforms and website.
-                    </p>
-                </TabPane> */}
             </TabContent>
         </Tab>
     );

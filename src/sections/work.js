@@ -2,7 +2,6 @@
 import { jsx, Box, Container, Heading, Image, Divider } from "theme-ui";
 import Tabs, { TabPane } from "rc-tabs";
 import { rgba } from "polished";
-import tabImage1 from "assets/images/tab-illustration-1.png";
 import Grid from "@mui/material/Grid";
 import SectionHeading from "components/section-heading";
 import data, {brands} from "../test-data";
@@ -16,13 +15,13 @@ const Work = () => {
       </Box>
       <Container xs={12} md={6}>
         <Tabs sx={styles.tabs} animated={{ tabPane: true }}>
-          {data?.map((item) => (
+          {data?.map((item, i) => (
             <TabPane
-              key={item.id}
+              key={i}
               tab={<Heading as="h4">{item.brandName}</Heading>}
             >
               <Box>
-                <Test data={data} mainTab={item.id} />
+                <Test data={data} mainTab={i} />
               </Box>
               <Box sx={styles.illustration}>
                 <Image src={item.logo} alt="illustration" />
@@ -34,8 +33,8 @@ const Work = () => {
       <Divider my={8} />
       <Container xs={12}>
         <Grid container spacing={2} alignItems="center">
-          {brands?.map((item) => (
-            <Grid item xs={2.4} sm={2.4} md={2.4}>
+          {brands?.map((item, i) => (
+            <Grid key={i} item xs={2.4} sm={2.4} md={2.4}>
               <Image sx={styles.image}  src={item.icon} alt="logo"/>
             </Grid>
           ))}

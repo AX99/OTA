@@ -15,20 +15,19 @@ const data = [
   {
     id: 1,
     logo: lut,
-    image: "tabImage1",
     brandName: "Linkup TV",
     name: "Link Up TV Music Conference in partnership with Footasylum",
     project: [
       {
-        objective:
+        'objective':
           "Link Up TV wanted to host a music conference to help young people learn more about how to get into the music industry as an artist, A&R or producer.",
       },
       {
-        solution:
+        'solution':
           "We worked with Link Up TV on the creative ideation of the conference and booked and managed guests and talent including record label heads, artists, producers and presenters.",
       },
       {
-        result:
+        'result':
           "Sold out event with over 500 attendees including household names, brand awareness, and positive brand perception for Link up TV. Exceeded KPIs set on all social platforms and website.",
       },
     ],
@@ -42,20 +41,19 @@ const data = [
   {
     id: 2,
     logo: lv,
-    image: "tabImage1",
     brandName: "Louis Vuitton",
     name: "Louis Vuitton Music Series",
     project: [
       {
-        objective:
+        'objective':
           "Louis Vuitton wanted to host a live music show in its apartment above the Bond Street flagship store as part of its music partnerships series.",
       },
       {
-        solution:
+        'solution':
           "We partnered with Louis Vuitton to manage and produce the music collaborations and creative direction of the live music events which included artists such as Tinie Tempah and Labrinth.",
       },
       {
-        result:
+        'result':
           "Improved brand perception and built awareness amongst Gen Z and millennial consumers as a culturally relevant brand against its high-fashion competitors.",
       },
     ],
@@ -69,19 +67,18 @@ const data = [
   {
     id: 3,
     logo: hennessy,
-    image: "tabImage1",
     brandName: "Hennessy",
     name: "Hennessy at Abbey Road Studios with ProducerWez",
     project: [
       {
-        objective:
+        'objective':
           "Ensure mixologists think of Hennessey as a front of mind brandy when serving brand-based drinks.",
       },
       {
-        solution:
+        'solution':
           "ProducerWez partnered with Hennessy to deliver annual workshops to mixologists and bartenders conducting unbelievable experiments showcasing how sound and smell affect taste.",
       },
-      { result: "Improved on-trade brand perception for Hennessey." },
+      { 'result': "Improved on-trade brand perception for Hennessey." },
     ],
     list: [
       "Medical and vision",
