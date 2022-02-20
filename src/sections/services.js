@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Container } from 'theme-ui';
-import { rgba } from 'polished';
+// import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
 import Service from 'components/cards/service';
 import icon1 from 'assets/images/icons/service1.png';
@@ -30,7 +30,7 @@ const data = [
 
 const Services = () => {
   return (
-    <Box as="section" id="what-we-do" sx={styles.section}>
+    <Box as="section" className="shadow-md rounded-lg" id="what-we-do" sx={styles.section}>
       <Container>
         <SectionHeading
           sx={styles.heading}
@@ -51,10 +51,10 @@ export default Services;
 
 const styles = {
   section: {
-    backgroundColor: rgba('#FFF5ED', 0.5),
+    // backgroundColor: rgba('#C8ADA7', 0.5),
     pt: [11, 11, 11, 12, 12, 12, 14],
     pb: [7, 7, 7, 9, 9, 10, 11],
-    borderBottom: '1px solid #D9E0E7',
+    // borderBottom: '1px solid #D9E0E7',
     minHeight: '100vh',
   },
   heading: {

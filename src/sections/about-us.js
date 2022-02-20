@@ -1,15 +1,16 @@
 import React from "react";
+import { rgba } from 'polished';
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import SectionHeading from "components/section-heading";
 import { Text, Box } from "theme-ui";
-import data from "../test-data";
+import data from "../data";
 import { RiCheckboxCircleFill } from "react-icons/ri";
 
 function AboutUs() {
   return (
-    <Box component="section" id="about-us" py={{ xs: 3, md: 12 }}>
+    <Box component="section" className="shadow-lg" sx={styles.page} id="about-us" py={{ xs: 3, md: 12 }}>
       <Box sx={styles.section}>
         <SectionHeading
           title="About Us"
@@ -68,8 +69,11 @@ function AboutUs() {
 export default AboutUs;
 
 const styles = {
+  page: {
+    backgroundColor:  rgba('#C8ADA7', 0.5),
+  },
   section: {
-    backgroundColor: "#FFF",
+    // backgroundColor: "#FFF",
     pt: [7, 7, 7, 9, 9, 9, 9],
     pb: [3, 3, 3, 7, 7, 9, 9],
     margin: "auto",
