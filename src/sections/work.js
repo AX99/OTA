@@ -20,7 +20,7 @@ const Work = () => {
               key={i}
               tab={<Heading as="h4">{item.brandName}</Heading>}
             >
-              <Box>
+              <Box sx={{minWidth: 'unset'}}>
                 <WorkTab data={data} mainTab={i} />
               </Box>
               <Box sx={styles.illustration}>
@@ -104,7 +104,7 @@ const styles = {
       },
     },
     ".rc-tabs-tabpane": {
-      display: ["flex", null, null, "grid"],
+      display: ["flex", null, "flex", "grid"],
       flexDirection: ["column-reverse", null, null, "unset"],
       alignItems: "center",
       justifyContent: "center",
