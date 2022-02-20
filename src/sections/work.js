@@ -4,16 +4,16 @@ import Tabs, { TabPane } from "rc-tabs";
 import { rgba } from "polished";
 import Grid from "@mui/material/Grid";
 import SectionHeading from "components/section-heading";
-import data, {brands} from "../test-data";
-import Test from "../components/tabbed";
+import data, {brands} from "../data";
+import WorkTab from "../components/tabbed";
 
 const Work = () => {
   return (
-    <Box as="section" id="work" sx={styles.section}>
+    <Box as="section" className="rounded-lg shadow-xl"  id="work" sx={styles.section}>
       <Box sx={styles.sectionHead}>
         <SectionHeading title="Work" description="Brands we've worked with" />
       </Box>
-      <Container xs={12} md={6}>
+      <Container className="rounded-md shadow-lg" xs={12} md={6}>
         <Tabs sx={styles.tabs} animated={{ tabPane: true }}>
           {data?.map((item, i) => (
             <TabPane
@@ -21,7 +21,7 @@ const Work = () => {
               tab={<Heading as="h4">{item.brandName}</Heading>}
             >
               <Box>
-                <Test data={data} mainTab={i} />
+                <WorkTab data={data} mainTab={i} />
               </Box>
               <Box sx={styles.illustration}>
                 <Image src={item.logo} alt="illustration" />
@@ -58,9 +58,8 @@ const styles = {
     }
   },
   sectionHead: {
-    backgroundColor: "#FFF",
     pt: [7, 7, 7, 9, 9, 9, 9],
-    pb: [3, 3, 3, 7, 7, 9, 9],
+    pb: [3],
     margin: "auto",
   },
   section: {
@@ -147,8 +146,10 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     textAlign: [null, null, null, null, null, "center"],
+    m: "30px auto",
+    p: "15px",
     img: {
-      maxWidth: ["40%", null, null, "50%", null, "50%", "50%"],
+      maxWidth: ["40%", null, null, "40%"],
     },
   },
 };

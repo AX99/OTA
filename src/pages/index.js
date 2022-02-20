@@ -5,7 +5,6 @@ import Banner from 'sections/banner';
 import Services from 'sections/services';
 import AboutUs from '../sections/about-us';
 import Work from 'sections/work';
-import SubscribeUs from 'sections/subscribe-us';
 import "@material-tailwind/react/tailwind.css";
 import 'rc-tabs/assets/index.css';
 import 'swiper/swiper-bundle.min.css';
@@ -18,7 +17,6 @@ export default function IndexPage() {
       <AboutUs />
       <Services />
       <Work />
-      <SubscribeUs />
     </Layout>
   );
 }

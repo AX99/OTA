@@ -5,14 +5,14 @@ import TabItem from "@material-tailwind/react/TabItem";
 import TabContent from "@material-tailwind/react/TabContent";
 import TabPane from "@material-tailwind/react/TabPane";
 
-export default function Test({data, mainTab}) {
+export default function WorkTab({data, mainTab}) {
     const [openTab, setOpenTab] = useState('objective');
     const tabNames = ['Objective', 'Solution', 'Result'];
 
 
     return (
         <Tab>
-            <TabList color="lightBlue">
+            <TabList color="red">
             {tabNames.map((item, i) => (
                 <TabItem
                     key={i}
