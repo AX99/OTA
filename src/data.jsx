@@ -1,15 +1,15 @@
-import adidas1 from "./assets/images/logos/adidas1.png";
-import amazon1  from "./assets/images/logos/amazon1.png";
+import adidas1 from "./assets/images/logos/adidas12.png";
+import amazon1  from "./assets/images/logos/amazon12.png";
 import ss  from "./assets/images/logos/ss.png";
-import tf  from "./assets/images/logos/tf.png";
-import mac  from "./assets/images/logos/mac.png";
-import asos  from "./assets/images/logos/asos.png";
-import converse  from "./assets/images/logos/converse.png";
+import tf  from "./assets/images/logos/tf2.png";
+import mac  from "./assets/images/logos/mac2.png";
+import asos  from "./assets/images/logos/asos2.png";
+import converse  from "./assets/images/logos/converse2.png";
 import ej  from "./assets/images/logos/ej.jpeg";
-import hp1  from "./assets/images/logos/hp1.png";
-import lv  from "./assets/images/logos/lv.png";
-import hennessy from "./assets/images/logos/hennessy.png"
-import lut from "./assets/images/logos/linkup.png"
+import hp1  from "./assets/images/logos/hp12.png";
+import lv  from "./assets/images/logos/lv2.png";
+import hennessy from "./assets/images/logos/hennessy2.png"
+import lut from "./assets/images/logos/linkup2.png"
 
 const data = [
   {
