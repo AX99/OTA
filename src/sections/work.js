@@ -68,6 +68,13 @@ const styles = {
     minHeight: '100vh'
   },
   tabs: {
+    ".rc-tabs-ink-bar": {
+      backgroundColor: "primary",
+    },
+    ul: {
+      backgroundColor: "primary",
+      justifyContent: "center",
+    },
     ".rc-tabs rc-tabs-top": {
       border: 'none',
       height: '400px',

@@ -12,7 +12,7 @@ export default function WorkTab({data, mainTab}) {
 
     return (
         <Tab>
-            <TabList color="red">
+            <TabList color="none" className="shadow-xl">
             {tabNames.map((item, i) => (
                 <TabItem
                     key={i}
