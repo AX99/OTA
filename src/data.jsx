@@ -11,6 +11,7 @@ import lv  from "./assets/images/logos/lv2.png";
 import hennessy from "./assets/images/logos/hennessy2.png"
 import lut from "./assets/images/logos/linkup2.png"
 
+
 const data = [
   {
     id: 1,
@@ -30,12 +31,6 @@ const data = [
         'result':
           "Sold out event with over 500 attendees including household names, brand awareness, and positive brand perception for Link up TV. Exceeded KPIs set on all social platforms and website.",
       },
-    ],
-    list: [
-      "Medical and vision",
-      "Life insurance",
-      "HSAs and FSAs",
-      "Commuter benefits",
     ],
   },
   {
@@ -57,12 +52,6 @@ const data = [
           "Improved brand perception and built awareness amongst Gen Z and millennial consumers as a culturally relevant brand against its high-fashion competitors.",
       },
     ],
-    list: [
-      "Medical and vision",
-      "Life insurance",
-      "HSAs and FSAs",
-      "Commuter benefits",
-    ],
   },
   {
     id: 3,
@@ -79,12 +68,6 @@ const data = [
           "ProducerWez partnered with Hennessy to deliver annual workshops to mixologists and bartenders conducting unbelievable experiments showcasing how sound and smell affect taste.",
       },
       { 'result': "Improved on-trade brand perception for Hennessey." },
-    ],
-    list: [
-      "Medical and vision",
-      "Life insurance",
-      "HSAs and FSAs",
-      "Commuter benefits",
     ],
   },
 ];
@@ -143,3 +126,11 @@ export const brands = [
     title: "Tom Ford",
   },
 ]
+
+export const aboutInfo = [
+  'Trend and Insight-driven',
+  'Human behaviour centric',
+  'Content that entertains',
+  'Culturally relevant campaigns',
+]
+

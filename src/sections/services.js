@@ -3,9 +3,9 @@ import { jsx, Box, Container } from 'theme-ui';
 // import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
 import Service from 'components/cards/service';
-import icon1 from 'assets/images/icons/service1.png';
-import icon2 from 'assets/images/icons/service2.png';
-import icon3 from 'assets/images/icons/service3.png';
+import icon1 from 'assets/images/icons/handshake.png';
+import icon2 from 'assets/images/icons/music.png';
+import icon3 from 'assets/images/icons/diversity.png';
 
 const data = [
   {
@@ -59,7 +59,10 @@ const styles = {
   },
   heading: {
     maxWidth: [null, null, null, 455, 660],
-    mb: [6, null, null, 8, null, 9, 13],
+    mb: [8, null, null, 8, null, 9, 12],
+    h2: {
+      textDecoration: 'underline #C8ADA7',
+    },
   },
   contentWrapper: {
     gap: 30,

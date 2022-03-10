@@ -21,7 +21,7 @@ const DrawerNav = () => {
 
   return (
     <Drawer
-      width="340px"
+      width="240px"
       placement="right"
       drawerHandler={
         <Box sx={styles.handler}>
