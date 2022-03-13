@@ -5,7 +5,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import SectionHeading from "components/section-heading";
 import { Text, Box } from "theme-ui";
-import data from "../data";
+import {aboutInfo} from "../data";
 import { RiCheckboxCircleFill } from "react-icons/ri";
 
 function AboutUs() {
@@ -48,7 +48,7 @@ function AboutUs() {
             sx={{ ml: { xs: -2, lg: "auto" }, mt: { xs: 6, lg: 0 } }}
           >
             <Box sx={styles.list}>
-              {data[0].list?.map((item) => (
+              {aboutInfo?.map((item) => (
                 <Box key={item} className="list-item">
                   <RiCheckboxCircleFill
                     color="#3FDBB1"

@@ -129,8 +129,8 @@ export const brands = [
 
 export const aboutInfo = [
   'Trend and Insight-driven',
-  'Human behaviour centric',
-  'Content that entertains',
-  'Culturally relevant campaigns',
+  'Human Behaviour Centric',
+  'Content that Entertains',
+  'Culturally Relevant Campaigns',
 ]
 
