@@ -48,13 +48,14 @@ const styles = {
       margin: "28px 0 0",
       padding: 0,
       display: ["flex", null, "unset", "flex", "flex"],
-      justifyContent: ["space-around", null, "unset"],
+      justifyContent: ["space-evenly", null, "unset"],
       li: {
-        display: "flex",
-        mr: ["15px", "25px", "40px"],
+        display: ["block", null, "flex"],
+        mr: [0, 0, "40px"],
         alignItems: "center",
+        textAlign: ["-webkit-center", null, "unset"],
         img: {
-          mr: ["5px", "15px"],
+          mr: [0, null, "15px"],
           maxWidth: ["25px", null, null, "30px"],
         },
       },

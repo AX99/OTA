@@ -17,11 +17,11 @@ export default function Footer() {
               {/* <Logo /> */}
               <img src={logo} sx={styles.image} alt='logo'/>
             </Box>
-            <Box sx={styles.terms}>
+            {/* <Box sx={styles.terms}>
               <Link path="#!">Terms of use</Link>
               <Text as="span">|</Text>
               <Link path="#!">Privacy</Link>
-            </Box>
+            </Box> */}
             <Text as="p" sx={styles.copyright}>
               Website by <Link path="https://ax99.tech"
               target="_blank" rel="noopener noreferrer"
@@ -75,29 +75,29 @@ const styles = {
   image:{
     height: '50px',
   },
-  terms: {
-    display: ['flex'],
-    gridColumn: '3/4',
-    alignItems: ['center', null, null, null, 'flex-start', 'center'],
-    flexDirection: ['row', null, null, null, 'row'],
-    justifyContent: [
-      'center',
-      null,
-      'flex-start',
-      null,
-      'left',
-      'flex-start',
-    ],
-    mt: [4],
-    a: {
-      color: 'heading',
-      textDecoration: 'none',
-    },
-    span: {
-      display: ['inline-flex', null, null, null, 'inline'],
-      m: ['0 10px'],
-    },
-  },
+  // terms: {
+  //   display: ['flex'],
+  //   gridColumn: '3/4',
+  //   alignItems: ['center', null, null, null, 'flex-start', 'center'],
+  //   flexDirection: ['row', null, null, null, 'row'],
+  //   justifyContent: [
+  //     'center',
+  //     null,
+  //     'flex-start',
+  //     null,
+  //     'left',
+  //     'flex-start',
+  //   ],
+  //   mt: [4],
+  //   a: {
+  //     color: 'heading',
+  //     textDecoration: 'none',
+  //   },
+  //   span: {
+  //     display: ['inline-flex', null, null, null, 'inline'],
+  //     m: ['0 10px'],
+  //   },
+  // },
   copyright: {
     color: rgba('#0F2137', 0.6),
     fontSize: ['14px'],
