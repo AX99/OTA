@@ -9,11 +9,11 @@ import WorkTab from "../components/tabbed";
 
 const Work = () => {
   return (
-    <Box as="section" className="rounded-lg shadow-xl"  id="work" sx={styles.section}>
+    <Box as="section" className="shadow-xl"  id="work" sx={styles.section}>
       <Box sx={styles.sectionHead}>
-        <SectionHeading title="Work" description="Brands we've worked with" />
+        <SectionHeading sx={{marginBottom: '15px'}} title="Work" description="Brands we've worked with" />
       </Box>
-      <Container className="rounded-md shadow-lg" xs={12} md={6}>
+      <Container className="rounded-md shadow-lg" xs={12} md={6} sx={styles.container}>
         <Tabs sx={styles.tabs} animated={{ tabPane: true }}>
           {data?.map((item, i) => (
             <TabPane
@@ -48,6 +48,9 @@ const Work = () => {
 export default Work;
 
 const styles = {
+  container: {
+    maxWidth: ['95%', null, null, null, null],
+  },
   image: {
     maxWidth: ['100%', null, '70%', '50%'],
     margin: 'auto',
@@ -59,8 +62,11 @@ const styles = {
   },
   sectionHead: {
     pt: [7, 7, 7, 9, 9, 9, 9],
-    pb: [3],
+    pb: [3, null, null, 0],
     margin: "auto",
+    h2: {
+      textDecoration: 'underline #C8ADA7',
+    },
   },
   section: {
     // pt: [11, null, null, 12],
@@ -68,6 +74,9 @@ const styles = {
     minHeight: '100vh'
   },
   tabs: {
+    ".rc-tabs-content-holder": {
+      minHeight : '400px',
+    },
     ".rc-tabs-ink-bar": {
       backgroundColor: "primary",
     },
@@ -89,7 +98,8 @@ const styles = {
     ".rc-tabs-nav-list": {
       flexGrow: 1,
       justifyContent: "space-evenly",
-      pb: [3, null, null, 5, null, 6],
+      py: [3, null, null, 5, null, 6],
+
     },
     ".rc-tabs-tab-btn": {
       outline: 0,
@@ -156,7 +166,7 @@ const styles = {
     m: "30px auto",
     p: "15px",
     img: {
-      maxWidth: ["40%", null, null, "40%"],
+      maxWidth: ["30%", null, null, "40%"],
     },
   },
 };
