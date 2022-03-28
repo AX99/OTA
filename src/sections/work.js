@@ -32,7 +32,7 @@ const Work = () => {
       </Container>
       <Divider my={8} />
       <Container xs={12}>
-        <Grid container spacing={2} alignItems="center">
+        <Grid container spacing={2} sx={styles.grid} alignItems="center">
           {brands?.map((item, i) => (
             <Grid key={i} item xs={2.4} sm={2.4} md={2.4}>
               <Image sx={styles.image}  src={item.icon} alt="logo"/>
@@ -168,5 +168,8 @@ const styles = {
     img: {
       maxWidth: ["30%", null, null, "40%"],
     },
+  },
+  grid: {
+    px: ["20px", null, "unset"],
   },
 };

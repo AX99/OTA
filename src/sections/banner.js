@@ -59,7 +59,7 @@ export default Banner;
 const styles = {
   section: {
     position: "relative",
-    height: ["100vh"],
+    minHeight: ["100vh"],
     pt: [105, null, null, 140, 15, null, 170],
     pb: [8, null, null, 0],
     zIndex: 0,

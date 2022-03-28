@@ -10,7 +10,7 @@ export default function WorkTab({ data, mainTab }) {
   const tabNames = ["Objective", "Solution", "Result"];
 
   return (
-    <Tab>
+    <Tab sx={{height: '250px'}}>
       <TabList color="none" className="shadow-xl flex-wrap md:flex-nowrap">
         {tabNames.map((item, i) => (
           <TabItem
