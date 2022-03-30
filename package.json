@@ -39,6 +39,7 @@
     "theme-ui": "^0.3.5"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "prettier": "^2.1.1"
   },
   "keywords": [
@@ -46,7 +47,9 @@
   ],
   "scripts": {
     "dev": "gatsby develop",
+    "dev-m": "gatsby develop -H 0.0.0.0 -p 8000",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }

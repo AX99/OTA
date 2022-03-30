@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/OTA",
   siteMetadata: {
     title: `One Twelve Agency - Music-led Brand Partnerships Agency`,
     description: `Music-led brand partnerships agency properly representing real and diverse lifestyles and cultures`,
