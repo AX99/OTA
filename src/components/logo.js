@@ -10,7 +10,7 @@ export default function Logo({ isSticky, footer, ...props }) {
     <Link path="/" sx={styles.logo} {...props}>
       {/* <LogoSvg />
        */}
-       <img src={logo} height="50px" alt='logo'/>
+       <img src={logo} sx={styles.image} alt='logo'/>
     </Link>
   );
 }
@@ -23,5 +23,8 @@ const styles = {
       height: 'auto',
       width: [128, null, '100%'],
     },
+  },
+  image: {
+    height: '50px',
   },
 };

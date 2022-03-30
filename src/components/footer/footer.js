@@ -15,15 +15,17 @@ export default function Footer() {
           <Box sx={styles.about}>
             <Box sx={styles.logo}>
               {/* <Logo /> */}
-              <img src={logo} height="50px" alt='logo'/>
+              <img src={logo} sx={styles.image} alt='logo'/>
             </Box>
-            <Box sx={styles.terms}>
+            {/* <Box sx={styles.terms}>
               <Link path="#!">Terms of use</Link>
               <Text as="span">|</Text>
               <Link path="#!">Privacy</Link>
-            </Box>
+            </Box> */}
             <Text as="p" sx={styles.copyright}>
-              Copyright by {new Date().getFullYear()} RedQ, Inc
+              Website by <Link path="https://ax99.tech"
+              target="_blank" rel="noopener noreferrer"
+              >AX99</Link> | {new Date().getFullYear()}
             </Text>
           </Box>
           {menuItems.map(({ id, title, items }) => (
@@ -41,14 +43,14 @@ const styles = {
     pb: [8],
   },
   footerTopInner: {
-    gap: [30, null, 50, '20px 50px', 17, 50],
+    // gap: [30, null, 50, '20px 50px', 17, 50],
+    gap: ['30px 0px', null, 50, 20],
     display: ['grid'],
     gridTemplateColumns: [
-      'repeat(2, 1fr)',
+      'repeat(1, 1fr)',
       null,
       null,
-      'repeat(4, 1fr)',
-      'repeat(5, 1fr)',
+      // 'repeat(5, 1fr)',
     ],
   },
   footerInner: {
@@ -59,46 +61,56 @@ const styles = {
     padding: '35px 0 40px',
   },
   about: {
-    display: [null, null, null, 'grid', 'block'],
+    display: [null, null, null, null, 'block'],
     gridTemplateColumns: '205px 1fr 1fr',
     alignItems: ['center'],
-    gridRow: ['3/4', null, '1/1', '3/4', 'unset'],
-    gridColumn: ['1/3', null, '1/2', '1/5', 'unset'],
+    gridRow: ['3/4', null, '1/1', null, 'unset'],
+    gridColumn: ['1/3', null, '1/2', null, 'unset'],
   },
   logo: {
     display: ['flex'],
-    justifyContent: ['center', null, null, 'unset'],
+    justifyContent: ['center', null, 'left'],
     gridColumn: '1/2',
   },
-  terms: {
-    display: ['flex'],
-    gridColumn: '3/4',
-    alignItems: ['center', null, null, null, 'flex-start', 'center'],
-    flexDirection: ['row', null, null, null, 'column', 'row'],
-    justifyContent: [
-      'center',
-      null,
-      'flex-start',
-      'center',
-      null,
-      'flex-start',
-    ],
-    mt: [4, null, null, 0, 4],
-    a: {
-      color: 'heading',
-      textDecoration: 'none',
-    },
-    span: {
-      display: ['inline-flex', null, null, null, 'none', 'inline-flex'],
-      m: ['0 10px'],
-    },
+  image:{
+    height: '50px',
   },
+  // terms: {
+  //   display: ['flex'],
+  //   gridColumn: '3/4',
+  //   alignItems: ['center', null, null, null, 'flex-start', 'center'],
+  //   flexDirection: ['row', null, null, null, 'row'],
+  //   justifyContent: [
+  //     'center',
+  //     null,
+  //     'flex-start',
+  //     null,
+  //     'left',
+  //     'flex-start',
+  //   ],
+  //   mt: [4],
+  //   a: {
+  //     color: 'heading',
+  //     textDecoration: 'none',
+  //   },
+  //   span: {
+  //     display: ['inline-flex', null, null, null, 'inline'],
+  //     m: ['0 10px'],
+  //   },
+  // },
   copyright: {
     color: rgba('#0F2137', 0.6),
     fontSize: ['14px'],
-    mt: [3, null, null, -31, 3],
-    mr: [null, null, null, 'auto', 'unset'],
+    mt: [3],
+    mr: [null, null, null, null, 'unset'],
     gridColumn: '2/3',
-    textAlign: ['center', null, 'left', 'center', 'left'],
+    textAlign: ['center', null, 'left'],
+    a: {
+      textDecoration: 'underline',
+      ':hover': {
+        color: 'primary',
+        textDecoration: 'none',
+    },
   },
-};
+},
+}
