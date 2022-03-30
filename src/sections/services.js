@@ -85,11 +85,11 @@ const styles = {
     display: "grid",
     justifyContent: "center",
     textAlign: "-webkit-center",
-    gridTemplateColumns: ["repeat(1,240px)", null, "repeat(2, 300px)"],
+    gridTemplateColumns: ["repeat(2,180px)", null, "repeat(2, 300px)", null, null, null, "repeat(4, 300px)"],
     width: "100%",
   },
   listItem: {
-    margin: "10px"
+    margin: ["20px", "10px"]
   },
   section: {
     // backgroundColor: rgba('#C8ADA7', 0.5),
@@ -104,6 +104,9 @@ const styles = {
     h2: {
       textDecoration: "underline #C8ADA7",
     },
+    p: {
+    fontWeight: [475, null, null, 600,],
+    }
   },
   contentWrapper: {
     gap: 30,

@@ -11,7 +11,7 @@ const Work = () => {
   return (
     <Box as="section" className="shadow-xl"  id="work" sx={styles.section}>
       <Box sx={styles.sectionHead}>
-        <SectionHeading sx={{marginBottom: '15px'}} title="Work" description="Brands we've worked with" />
+        <SectionHeading sx={{fontWeight: [475, null, null, 600,], marginBottom: '15px'}} title="Work" description="Brands we've worked with" />
       </Box>
       <Container className="rounded-md shadow-lg" xs={12} md={6} sx={styles.container}>
         <Tabs sx={styles.tabs} animated={{ tabPane: true }}>

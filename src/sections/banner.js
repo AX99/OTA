@@ -6,7 +6,6 @@ import SectionHeading from "components/section-heading";
 import illustration from "assets/images/icons/favicon.png";
 import illustration_logo from "assets/images/logos/logo.png";
 import down from "assets/images/icons/chevron-down.svg";
-// import { height } from "@mui/system";
 
 const Banner = () => {
   return (
@@ -58,10 +57,9 @@ export default Banner;
 
 const styles = {
   section: {
-    position: "relative",
     minHeight: ["100vh"],
-    pt: [105, null, null, 140, 15, null, 170],
-    pb: [8, null, null, 0],
+    pt: [11, 11, 11, 12, 12, 12, 14],
+    pb: [7, 7, 7, 9, 9, 10, 11],
     zIndex: 0,
     ":before": {
       backgroundColor: rgba("#FFF", 0.5),
@@ -80,14 +78,11 @@ const styles = {
     flexDirection: "column",
     justifyContent: "flex-end",
     "> div": {
-      mt:["50px", null, "25px", null ],
+      mt:["25px", null, "25px", null ],
     },
   },
   heading: {
     mb: [30],
-    // maxWidth: [null, null, null, 500, 560, 730],
-    // maxWidth: [null, null, null, '75%', '75%'],
-    pb: [50],
     h2: {
       fontFamily: "Be Vietnam Pro",
       fontSize: [8, null, null, 8, 9, 10, 11],
@@ -98,16 +93,17 @@ const styles = {
       lineHeight: [1.87, null, null, 2.33],
       fontSize: ["18px", "20px", "25px"],
       color: "#C8ADA7",
-      m: ["40px auto", null],
+      m: ["15px auto", null, null],
       maxWidth: "unset",
     },
   },
   illustration: {
-    display: ["block", null, "flex", "flex"],
+    // display: ["flex"],
+    display: ["block", null, "flex"],
     position: "relative",
     img_logo: {
-      display: ["none", "none", "block", "block"],
-      maxWidth: [null, null, "75%", "75%"],
+      display: ["none", "none", "block"],
+      maxWidth: [null, null, "75%"],
       m: ["0 auto"],
     },
     img_: {
@@ -136,7 +132,7 @@ const styles = {
   },
   buttonWrapper: {
     textAlign: ["center"],
-    position: ["static", null, null, "absolute"],
+    position: ["static", null, null, "inherit"],
     left: "50%",
     top: 0,
     transform: ["unset", null, null, "translateX(-50%)"],
