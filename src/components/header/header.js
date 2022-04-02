@@ -6,6 +6,7 @@ import { NavLink } from 'components/link';
 import { DrawerProvider } from 'contexts/drawer/drawer-provider';
 import NavbarDrawer from './navbar-drawer';
 import menuItems from './header.data';
+import ContactForm from 'components/contactForm';
 
 export default function Header() {
   return (
@@ -24,9 +25,9 @@ export default function Header() {
                       </li>
                     ))}
                   </Box>
-                  <Button variant="text" sx={styles.getStartedDesktop}>
+                  <ContactForm onClick={"handleOpen"} sx={styles.getStartedDesktop}>
                     Contact
-                  </Button>
+                  </ContactForm>
                 </Box>
                 <Button variant="text" sx={styles.getStartedMobile}>
                   Contact
@@ -119,4 +120,15 @@ const styles = {
       stroke: 'text',
     },
   },
+  style: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: 400,
+    bgcolor: "background.paper",
+    border: "2px solid #000",
+    boxShadow: 24,
+    p: 4,
+  }
 };
