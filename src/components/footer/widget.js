@@ -3,7 +3,7 @@ import { jsx, Box, Heading, Image } from "theme-ui";
 import { Link } from "components/link";
 import { rgba } from "polished";
 
-const Widget = ({ title, items }) => {
+const Widget = ({ title, items, open, handleOpen, handleClose }) => {
   return (
     <Box sx={styles.footerWidget}>
       <Heading as="h4">{title}</Heading>
@@ -13,6 +13,7 @@ const Widget = ({ title, items }) => {
             {icon && <Image src={icon} alt={label} />}
             <Link
               path={path}
+              onClick={path === "#!" && handleOpen}
               key={i}
               label={label}
               target="_blank"

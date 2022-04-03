@@ -7,7 +7,7 @@ import Widget from './widget';
 import { menuItems } from './footer.data';
 import { rgba } from 'polished';
 
-export default function Footer() {
+export default function Footer({ open, handleOpen, handleClose }) {
   return (
     <Box as="footer" sx={styles.footer}>
       <Container>
@@ -15,7 +15,7 @@ export default function Footer() {
           <Box sx={styles.about}>
             <Box sx={styles.logo}>
               {/* <Logo /> */}
-              <img src={logo} sx={styles.image} alt='logo'/>
+              <img src={logo} sx={styles.image} alt="logo" />
             </Box>
             {/* <Box sx={styles.terms}>
               <Link path="#!">Terms of use</Link>
@@ -23,13 +23,15 @@ export default function Footer() {
               <Link path="#!">Privacy</Link>
             </Box> */}
             <Text as="p" sx={styles.copyright}>
-              Website by <Link path="https://ax99.tech"
-              target="_blank" rel="noopener noreferrer"
-              >AX99</Link> | {new Date().getFullYear()}
+              Website by{" "}
+              <Link path="https://ax99.tech" target="_blank" rel="noopener noreferrer">
+                AX99
+              </Link>{" "}
+              | {new Date().getFullYear()}
             </Text>
           </Box>
           {menuItems.map(({ id, title, items }) => (
-            <Widget key={id} title={title} items={items} />
+            <Widget key={id} title={title} items={items} open={open} handleOpen={handleOpen} handleClose={handleClose} />
           ))}
         </Box>
       </Container>

@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import { useState } from "react";
 import { jsx, Button } from 'theme-ui';
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -17,11 +16,7 @@ const style = {
   p: 4,
 };
 
-export default function ContactForm() {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
+export default function ContactForm({open, handleOpen, handleClose}) {
   return (
     <div>
       <Button onClick={handleOpen} variant="text">Contact</Button>

@@ -8,7 +8,7 @@ import NavbarDrawer from './navbar-drawer';
 import menuItems from './header.data';
 import ContactForm from 'components/contactForm';
 
-export default function Header() {
+export default function Header({ open, handleOpen, handleClose }) {
   return (
     <DrawerProvider>
       <Box sx={styles.headerWrapper}>
@@ -25,11 +25,9 @@ export default function Header() {
                       </li>
                     ))}
                   </Box>
-                  <ContactForm onClick={"handleOpen"} sx={styles.getStartedDesktop}>
-                    Contact
-                  </ContactForm>
+                  <ContactForm open={open} handleOpen={handleOpen} handleClose={handleClose} sx={styles.getStartedDesktop}>Contact</ContactForm>
                 </Box>
-                <Button variant="text" sx={styles.getStartedMobile}>
+                <Button onClick={handleOpen} variant="text" sx={styles.getStartedMobile}>
                   Contact
                 </Button>
                 <NavbarDrawer />
