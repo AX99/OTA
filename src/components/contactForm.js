@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Button } from 'theme-ui';
+import { jsx } from 'theme-ui';
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
@@ -9,20 +9,21 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
+  width: 800,
+  height: 600,
+  backgroundColor: "#fff",
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
 
-export default function ContactForm({open, handleOpen, handleClose}) {
+export default function ContactForm({open, toggleHandle}) {
   return (
     <div>
-      <Button onClick={handleOpen} variant="text">Contact</Button>
+      {/* <Button onClick={toggleHandle} variant="text">Contact</Button> */}
       <Modal
         open={open}
-        onClose={handleClose}
+        onClose={toggleHandle}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >

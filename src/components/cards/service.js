@@ -36,11 +36,11 @@ const styles = {
     h3: {
       color: 'heading',
       fontWeight: 700,
-      fontFamily: 'body',
+      fontFamily: 'heading',
       fontSize: [2, null, null, 17, 3],
       lineHeight: [1.68],
       textAlign: 'center',
-      textDecoration: 'underline #C8ADA7',
+      // textDecoration: 'underline #C8ADA7',
     },
     p: {
       fontSize: [1, null, null, null, 2],

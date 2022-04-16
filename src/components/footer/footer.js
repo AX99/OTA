@@ -7,7 +7,7 @@ import Widget from './widget';
 import { menuItems } from './footer.data';
 import { rgba } from 'polished';
 
-export default function Footer({ open, handleOpen, handleClose }) {
+export default function Footer({ open, toggleHandle }) {
   return (
     <Box as="footer" sx={styles.footer}>
       <Container>
@@ -31,7 +31,7 @@ export default function Footer({ open, handleOpen, handleClose }) {
             </Text>
           </Box>
           {menuItems.map(({ id, title, items }) => (
-            <Widget key={id} title={title} items={items} open={open} handleOpen={handleOpen} handleClose={handleClose} />
+            <Widget key={id} title={title} items={items} open={open} toggleHandle={toggleHandle}/>
           ))}
         </Box>
       </Container>
