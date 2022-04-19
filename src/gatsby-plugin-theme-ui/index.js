@@ -1,4 +1,4 @@
-export default {
+const theme = {
   // example colors with dark mode
   colors: {
     text: '#343D48', // body color and primary color
@@ -337,3 +337,5 @@ export default {
     },
   },
 };
+
+export default theme

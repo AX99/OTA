@@ -8,12 +8,12 @@ export const menuItems = [
     title: 'Contact',
     items: [
       {
-        path: 'https://wa.me/447960814557',
+        path: 'https://wa.me/447840731249',
         icon: whatsapp,
         label: 'Whatsapp',
       },
       {
-        path: 'mailto:hannah@onetwelveagency.com?subject=Enquiry',
+        path: 'mailto:hello@onetwelveagency.com?subject=Enquiry',
         icon: email,
         label: 'Email Us',
       },

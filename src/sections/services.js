@@ -13,8 +13,8 @@ const data = [
   {
     id: 1,
     icon: icon1,
-    title: "Brand Partnerships",
-    description: `Creating culturally relevant and authentic influencer, celebrity and lifestyle campaigns for brands.`,
+    title: "Culture Led Partnerships",
+    description: `Creating relevant and authentic influencer/celebrity campaigns, PR and events for brands.`,
   },
   {
     id: 3,
@@ -25,8 +25,8 @@ const data = [
   {
     id: 4,
     icon: icon3,
-    title: "Equity and Inclusion Consultancy",
-    description: `Ensuring brand campaigns are representative and inclusive, whilst capturing realistic portrayals.`,
+    title: "ED&I Consultancy",
+    description: `Equity, Diversity & Inclusion Partnerships, ensuring a brand's marketing is truly representative of the lifestyles & cultures they want to portray.`,
   },
 ];
 

@@ -76,13 +76,14 @@ const styles = {
     backgroundColor: rgba("#C8ADA7", 0.5),
     pt: "50px",
     pb: ["50px", null, null, null, null, "150px"],
-    minHeight: "100vh"
+    minHeight: "100vh",
   },
   heading: {
     mb: [6, null, null, null],
     p: {
       fontWeight: [480],
-    }
+      maxWidth: ["75%", null, null, "none"],
+    },
   },
   figure: {
     minWidth: [88, null, null, null, null, 70, 88],
@@ -98,7 +99,7 @@ const styles = {
     maxWidth: ["95%", null, null, null, "100%"],
     margin: "auto",
     p: {
-      maxWidth: "none"
+      maxWidth: "none",
     },
   },
   grid: {
@@ -116,13 +117,12 @@ const styles = {
     justifyContent: "center",
     margin: "auto",
     mb: [5, null, null, null],
-
   },
   container: {
     display: ["block"],
-    textAlign: "center", 
+    textAlign: "center",
     "figure:not(:last-child)": {
-      mr: [40, null, null, null, 80]
-    }
+      mr: [40, null, null, null, 80],
+    },
   },
 };
