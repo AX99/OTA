@@ -1,18 +1,19 @@
 /** @jsx jsx */
-import { jsx, Box, Heading, Image } from "theme-ui";
+import { jsx, Box, Image } from "theme-ui";
 import { Link } from "components/link";
 import { rgba } from "polished";
 
-const Widget = ({ title, items }) => {
+const Widget = ({ title, items, open, toggleHandle}) => {
   return (
     <Box sx={styles.footerWidget}>
-      <Heading as="h4">{title}</Heading>
+      {/* <Heading as="h4">{title}</Heading> */}
       <ul>
         {items.map(({ path, label, icon }, i) => (
           <li key={i}>
             {icon && <Image src={icon} alt={label} />}
             <Link
               path={path}
+              onClick={path === "#!" && toggleHandle}
               key={i}
               label={label}
               target="_blank"
@@ -45,7 +46,7 @@ const styles = {
     },
     ul: {
       listStyle: "none",
-      margin: "28px 0 0",
+      margin: "0 0 28px",
       padding: 0,
       display: ["flex", null, "unset", "flex", "flex"],
       justifyContent: ["space-evenly", null, "unset"],
@@ -54,10 +55,15 @@ const styles = {
         mr: [0, 0, "40px"],
         alignItems: "center",
         textAlign: ["-webkit-center", null, "unset"],
+        // justifyContent: [null, null, "right"],
+        
         img: {
           mr: [0, null, "15px"],
           maxWidth: ["25px", null, null, "30px"],
         },
+      },
+      "li:last-child": {
+        mr: [null, null, null, 0]
       },
       a: {
         color: rgba("#02073E", 0.8),

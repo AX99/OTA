@@ -5,17 +5,21 @@ import tf  from "./assets/images/logos/tf2.png";
 import mac  from "./assets/images/logos/mac2.png";
 import asos  from "./assets/images/logos/asos2.png";
 import converse  from "./assets/images/logos/converse2.png";
-import ej  from "./assets/images/logos/ej.jpeg";
+import bacardi  from "./assets/images/logos/bacardi.png";
 import hp1  from "./assets/images/logos/hp12.png";
 import lv  from "./assets/images/logos/lv2.png";
 import hennessy from "./assets/images/logos/hennessy2.png"
 import lut from "./assets/images/logos/linkup2.png"
 
+import lut1 from "./assets/images/work images/lut.png"
+import lv1 from "./assets/images/work images/lv.png"
+import hennessy1 from "./assets/images/work images/hennessy.png"
 
 const data = [
   {
     id: 1,
     logo: lut,
+    img: lut1,
     brandName: "Linkup TV",
     name: "Link Up TV Music Conference in partnership with Footasylum",
     project: [
@@ -25,17 +29,18 @@ const data = [
       },
       {
         'solution':
-          "We worked with Link Up TV on the creative ideation of the conference and booked and managed guests and talent including record label heads, artists, producers and presenters.",
+          "We worked with Link Up TV and FootAsylum (the event sponsor) on the creative ideation and curation of the conference and booked and managed special guests and talent including artists such as Giggs and MsBanks, producers including Steel Banglez and presenters such as Chuckie Online and Rob Bruce.",
       },
       {
         'result':
-          "Sold out event with over 500 attendees including household names, brand awareness, and positive brand perception for Link up TV. Exceeded KPIs set on all social platforms and website.",
+          "Sold out event with over 500 attendees including many VIPs, brand awareness, and positive brand perception for Link Up TV. Exceeded KPIs set on all social platforms and website visits.",
       },
     ],
   },
   {
     id: 2,
     logo: lv,
+    img: lv1,
     brandName: "Louis Vuitton",
     name: "Louis Vuitton Music Series",
     project: [
@@ -56,18 +61,19 @@ const data = [
   {
     id: 3,
     logo: hennessy,
+    img: hennessy1,
     brandName: "Hennessy",
     name: "Hennessy at Abbey Road Studios with ProducerWez",
     project: [
       {
         'objective':
-          "Ensure mixologists think of Hennessey as a front of mind brandy when serving brand-based drinks.",
+          "Hennessy wanted to ensure that mixologists think of Hennessy as a front of mind Cognac when creating and serving brandy-based drinks.",
       },
       {
         'solution':
-          "ProducerWez partnered with Hennessy to deliver annual workshops to mixologists and bartenders conducting unbelievable experiments showcasing how sound and smell affect taste.",
+          "We teamed Hennessy up with ProducerWez, a famous producer who has worked with the likes of Beyonce and NaughtyBoy, and who has studied how your sense of smell and taste changes based on the sounds and frequencies you are hearing. Together we put on a series of immersive workshops at Abbey Road Studios on how sound affects taste and to bring out the many layers of the various Hennessy Cognacs.",
       },
-      { 'result': "Improved on-trade brand perception for Hennessey." },
+      { 'result': "Improved brand perception of Hennessy amongst mixologists with a deeper appreciation of its versatility. New Hennessy-based cocktail recipes created to be served on trade." },
     ],
   },
 ];
@@ -92,13 +98,13 @@ export const brands = [
   },
   {
     id: 4,
-    icon: converse,
-    title: "Converse",
+    icon: bacardi,
+    title: "Bacardi",
   },
   {
     id: 5,
-    icon: ej,
-    title: "E&J",
+    icon: converse,
+    title: "Converse",
   },
   {
     id: 6,
@@ -128,8 +134,8 @@ export const brands = [
 ]
 
 export const aboutInfo = [
-  'Trend and Insight-driven',
-  'Human Behaviour Centric',
+  'Data and Insight-Driven',
+  'Authentic & Creative Story-telling',
   'Content that Entertains',
   'Culturally Relevant Campaigns',
 ]

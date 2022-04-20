@@ -3,8 +3,8 @@ import { jsx, Box, Container, Button, Image } from "theme-ui";
 import { rgba } from "polished";
 import { Link } from "react-scroll";
 import SectionHeading from "components/section-heading";
-import illustration from "assets/images/icons/favicon.png";
-import illustration_logo from "assets/images/logos/logo.png";
+// import illustration from "assets/images/icons/favicon.png";
+// import illustration_logo from "assets/images/logos/logo.png";
 import down from "assets/images/icons/chevron-down.svg";
 
 const Banner = () => {
@@ -12,7 +12,7 @@ const Banner = () => {
     <Box as="section" id="home" className="shadow-md" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
-          <Box sx={styles.illustration}>
+          {/* <Box sx={styles.illustration}>
             <Image
               src={illustration}
               alt="illustration"
@@ -23,10 +23,11 @@ const Banner = () => {
               alt="illustration logo"
               sx={styles.illustration.img_logo}
             />
-          </Box>
+          </Box> */}
           <SectionHeading
             sx={styles.heading}
-            description="Music-led brand partnerships agency properly representing real and diverse lifestyles and cultures."
+            description="One Twelve Agency
+            create brand partnerships and strategies through culturally relevant moments to tell a brand’s story or amplify music projects."
           />
 
           <Box sx={styles.illustration}>
@@ -74,6 +75,8 @@ const styles = {
   },
   contentWrapper: {
     display: "flex",
+    height: ["60vh"],
+    pt: [18],
     alignItems: "center",
     flexDirection: "column",
     justifyContent: "flex-end",
@@ -82,40 +85,42 @@ const styles = {
     },
   },
   heading: {
-    mb: [30],
+    my: [30],
+    maxWidth:["unset"],
     h2: {
-      fontFamily: "Be Vietnam Pro",
       fontSize: [8, null, null, 8, 9, 10, 11],
       lineHeight: [1.57],
     },
     p: {
       // fontSize: [1, null, null, 3],
       lineHeight: [1.87, null, null, 2.33],
-      fontSize: ["18px", "20px", "25px"],
+      fontFamily: "heading",
+      fontSize: ["18px", "20px", "25px", 28, 30, 32, 36],
+      fontWeight: "900",
       color: "#C8ADA7",
+      pt: 28,
       m: ["15px auto", null, null],
-      maxWidth: "unset",
+      maxWidth:["unset"]
     },
   },
   illustration: {
     // display: ["flex"],
     display: ["block", null, "flex"],
     position: "relative",
-    img_logo: {
-      display: ["none", "none", "block"],
-      maxWidth: [null, null, "75%"],
-      m: ["0 auto"],
-    },
-    img_: {
-      display: ["block", "block", "none"],
-      maxWidth: ["45%", "35%", null, null],
-      m: ["0 auto"],
-    },
+    // img_logo: {
+    //   display: ["none", "none", "block"],
+    //   maxWidth: [null, null, "75%"],
+    //   m: ["0 auto"],
+    // },
+    // img_: {
+    //   display: ["block", "block", "none"],
+    //   maxWidth: ["45%", "35%", null, null],
+    //   m: ["0 auto"],
+    // },
   },
   button: {
     borderRadius: "50%",
-    backgroundColor: "secondary",
-    color: "primary",
+    backgroundColor: "transparent",
     p: 6,
     height: "80px",
     width: "80px",
@@ -126,8 +131,10 @@ const styles = {
     },
     ':hover': {
       img:{
-        transform: "scale(1.3)"
+        transform: "scale(1.3)",
+        filter: "invert(10%) sepia(6%) saturate(5901%) hue-rotate(199deg) brightness(95%) contrast(89%)",
       },
+      backgroundColor: "primary",
     },
   },
   buttonWrapper: {

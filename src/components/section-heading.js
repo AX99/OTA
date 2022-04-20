@@ -22,8 +22,8 @@ const styles = {
   },
   title: {
     fontFamily: 'heading',
-    fontWeight: 700,
-    fontSize: [5, null, null, 26, null, 30, 9],
+    fontWeight: 300,
+    fontSize: [5, null, null, 26, null],
     lineHeight: [1.33, 1.33, 1.48],
     letterSpacing: ['-0.5px', null, null, null, null, null, '-1px'],
     img: {

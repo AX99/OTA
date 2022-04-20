@@ -25,6 +25,6 @@ const styles = {
     },
   },
   image: {
-    height: '50px',
+    height: '85px',
   },
 };

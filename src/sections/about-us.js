@@ -1,11 +1,26 @@
 /** @jsx jsx */
-import { jsx, Text, Box, Image, Container } from "theme-ui";
+import { jsx, Text, Box, Container, Grid } from "theme-ui";
 import { rgba } from "polished";
 // @mui material components
 // import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
+// import Grid from "@mui/material/Grid";
 import SectionHeading from "components/section-heading";
-import logo from "assets/images/icons/favicon.png";
+import G from "assets/images/g.png";
+import Hannah from "assets/images/hannah.png";
+import Profile from "components/cards/profile";
+
+const staff = [
+  {
+    name: "G",
+    title: "Co-Founder",
+    pic: G,
+  },
+  {
+    name: "Hannah",
+    title: "Co-Founder",
+    pic: Hannah,
+  },
+];
 
 function AboutUs() {
   return (
@@ -17,37 +32,36 @@ function AboutUs() {
     >
       <Box sx={styles.section}>
         <SectionHeading
-          title="About Us"
-          description="Black and Brown Female owned brand partnerships agency properly
-                representing real and diverse lifestyles and cultures."
+          title="ABOUT US"
+          description="Founded by Black & Brown WOC who have a true understanding of the lifestyles and cultures associated with Gen Z marketing and relevant subcultures, alongside a passion to see this properly represented"
           sx={styles.heading}
         />
       </Box>
       <Container>
         <Grid container alignItems="center" sx={styles.container}>
-          <Grid item xs={12} lg={8} sx={styles.grid}>
-            <Text variant="body2" color="text" px={8} mb={2}>
-              As founders of OTa having worked in marketing and advertising for
-              a number of years and fed up with the lack of interest in
-              diversity, we decided to set up One Twelve to truly make a
-              difference.
+          <Grid item xs={12} lg={5} sx={styles.portrait}>
+            {staff?.map((item) => (
+              <Profile item={item} />
+            ))}
+          </Grid>
+          <Grid item xs={12} lg={7} sx={styles.grid}>
+            <Text as="p" variant="body2" color="text" px={8} mb={2}>
+              G and Hannah have over 15 years combined experience working in
+              marketing and advertising and seeing the lack of interest in
+              authentic cultural marketing decided to set up One Twelve Agency
+              to truly make a difference.
             </Text>
 
-            <Text variant="body2" color="text" px={8} mb={2}>
+            <Text as="p" variant="body2" color="text" px={8} mb={2}>
               We have a passion to ensure that people who look like us are
               properly represented and the stories being told are accurate.
             </Text>
 
-            <Text variant="body2" color="text" px={8} mb={2}>
-              We believe that the only way that brands will truly create diverse
-              and inclusive campaigns is to work with creators and agencies from
+            <Text as="p" variant="body2" color="text" px={8} mb={2}>
+              We believe that the only way that brands will truly create
+              inclusive campaigns is to work with creators and agencies from
               diverse backgrounds.
             </Text>
-          </Grid>
-          <Grid item xs={12} lg={4} sx={styles.logo}>
-            <Box as="figure" sx={styles.figure}>
-              <Image src={logo} alt="logo" />
-            </Box>
           </Grid>
         </Grid>
       </Container>
@@ -62,13 +76,14 @@ const styles = {
     backgroundColor: rgba("#C8ADA7", 0.5),
     pt: "50px",
     pb: ["50px", null, null, null, null, "150px"],
-    minHeight: "100vh"
+    minHeight: "100vh",
   },
   heading: {
-    mb: [6, null, null, null, ],
+    mb: [6, null, null, null],
     p: {
-    fontWeight: [475, null, null, 600,],
-    }
+      fontWeight: [480],
+      maxWidth: ["75%", null, null, "none"],
+    },
   },
   figure: {
     minWidth: [88, null, null, null, null, 70, 88],
@@ -80,22 +95,34 @@ const styles = {
   },
   section: {
     pt: [7, 7, 7],
-    pb: [3, 3, 3],
-    maxWidth: ["95%", ],
+    pb: [3, 3, 6],
+    maxWidth: ["95%", null, null, null, "100%"],
     margin: "auto",
-    h2: {
-      textDecoration: "underline #21223B",
+    p: {
+      maxWidth: "none",
     },
   },
   grid: {
     pb: ["20px", null, null, null, null, "unset"],
-    div: {
+    p: {
       textAlign: ["center", null, null, null, null, "center"],
       px: [4, 8, null, null, "unset"],
+      fontFamily: "body",
+      fontSize: [16],
     },
+    mt: [5, null, null, null, 30],
+  },
+  portrait: {
+    display: "inline-flex",
+    justifyContent: "center",
+    margin: "auto",
+    mb: [5, null, null, null],
   },
   container: {
-    display: ["flex"],
-    flexDirection: ["column"],
+    display: ["block"],
+    textAlign: "center",
+    "figure:not(:last-child)": {
+      mr: [40, null, null, null, 80],
+    },
   },
 };

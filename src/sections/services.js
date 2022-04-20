@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Box, Container } from "theme-ui";
-// import { rgba } from 'polished';
 import SectionHeading from "components/section-heading";
 import Service from "components/cards/service";
 import icon1 from "assets/images/icons/handshake.png";
@@ -14,20 +13,20 @@ const data = [
   {
     id: 1,
     icon: icon1,
-    title: "Brand Partnerships",
-    description: `Creating culturally relevant and authentic influencer, celebrity and lifestyle campaigns for brands.`,
+    title: "Culture Led Partnerships",
+    description: `Creating relevant and authentic influencer/celebrity campaigns, PR and events for brands.`,
   },
   {
     id: 3,
     icon: icon2,
-    title: "Music Artist Ecosystem",
-    description: `Leveraging the power of influencers to market musical projects.`,
+    title: "Music Partnerships",
+    description: `Leveraging the power of social, influencers and PR to amplify music projects`,
   },
   {
     id: 4,
     icon: icon3,
-    title: "Brand D&I Consultancy",
-    description: `Working with brands to ensure their marketing projects are truly diverse and inclusive.`,
+    title: "ED&I Consultancy",
+    description: `Equity, Diversity & Inclusion Partnerships, ensuring a brand's marketing is truly representative of the lifestyles & cultures they want to portray.`,
   },
 ];
 
@@ -43,16 +42,13 @@ const Services = () => {
         <SectionHeading
           sx={styles.heading}
           title="What We Do"
-          description="Rather than being a trend, we live and breath inclusion and this is at the forefront of everything One Twelve agency stands for."
+          description="Rather than being a trend, we live and breathe inclusion and this is at the forefront of everything One Twelve Agency stands for."
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
             <Service key={item.id} item={item} />
           ))}
         </Box>
-        <SectionHeading
-          description="Rather than being a trend, we live and breath inclusion and this is at the forefront of everything One Twelve agency stands for."
-        />
         <Grid
           item
           xs={12}
@@ -81,7 +77,7 @@ export default Services;
 
 const styles = {
   listIcon: {
-    mt: [11],
+    mt: ["40px", null, null, "100px"],
     display: "grid",
     justifyContent: "center",
     textAlign: "-webkit-center",
@@ -92,20 +88,19 @@ const styles = {
     margin: ["20px", "10px"]
   },
   section: {
-    // backgroundColor: rgba('#C8ADA7', 0.5),
     pt: [11, 11, 11, 12, 12, 12, 14],
     pb: [7, 7, 7, 9, 9, 10, 11],
     // borderBottom: '1px solid #D9E0E7',
-    minHeight: "100vh",
+    minHeight: "95vh",
   },
   heading: {
     maxWidth: [null, null, null, 455, 660],
     mb: [8, null, null, 8, null, 9, 12],
     h2: {
-      textDecoration: "underline #C8ADA7",
+      // textDecoration: "underline #C8ADA7",
     },
     p: {
-    fontWeight: [475, null, null, 600,],
+      fontWeight: [480],
     }
   },
   contentWrapper: {
@@ -118,6 +113,6 @@ const styles = {
       "repeat(1, 285px)",
       "repeat(3, 1fr)",
     ],
-    mb: ["20px", null, "60px"]
+    my: ["20px", null, "60px"]
   },
 };

@@ -6,8 +6,9 @@ import { NavLink } from 'components/link';
 import { DrawerProvider } from 'contexts/drawer/drawer-provider';
 import NavbarDrawer from './navbar-drawer';
 import menuItems from './header.data';
+import ContactForm from 'components/contactForm';
 
-export default function Header() {
+export default function Header({ open, toggleHandle }) {
   return (
     <DrawerProvider>
       <Box sx={styles.headerWrapper}>
@@ -24,11 +25,9 @@ export default function Header() {
                       </li>
                     ))}
                   </Box>
-                  <Button variant="text" sx={styles.getStartedDesktop}>
-                    Contact
-                  </Button>
+                  <ContactForm open={open} toggleHandle={toggleHandle}/>
                 </Box>
-                <Button variant="text" sx={styles.getStartedMobile}>
+                <Button onClick={toggleHandle} variant="text" sx={styles.getStartedMobile}>
                   Contact
                 </Button>
                 <NavbarDrawer />
@@ -45,6 +44,9 @@ const styles = {
   headerWrapper: {
     backgroundColor: 'transparent',
     '.is-sticky': {
+      // img: {
+      //   display: "inline-flex"
+      // },
       header: {
         backgroundColor: 'white',
         boxShadow: '0 6px 13px rgba(38,78,118,0.1)',
@@ -70,6 +72,7 @@ const styles = {
   },
   logo: {
     // mr: [null, null, null, null, 6, 12],
+    // display: "none"
   },
   navbar: {
     display: ['none', null, null, null, 'flex'],
@@ -97,26 +100,12 @@ const styles = {
       color: 'primary',
     },
   },
-  getStartedDesktop: {
-    color: 'primary',
-    display: ['none', 'none', 'none', 'none', 'flex'],
-  },
   getStartedMobile: {
     color: 'primary',
     fontSize: [1],
     minHeight: 30,
     m: ['0 15px 0 auto'],
     padding: '0 11px',
-    display: ['flex', null, null, null, 'none'],
-  },
-  closeButton: {
-    height: '32px',
-    padding: '4px',
-    minHeight: 'auto',
-    width: '32px',
-    ml: '3px',
-    path: {
-      stroke: 'text',
-    },
+    // display: ['flex', null, null, null, 'none'],
   },
 };

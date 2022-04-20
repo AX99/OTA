@@ -1,4 +1,4 @@
-export default {
+const theme = {
   // example colors with dark mode
   colors: {
     text: '#343D48', // body color and primary color
@@ -27,10 +27,10 @@ export default {
     },
   },
   fonts: {
-    body: 'Be Vietnam Pro, DM Sans', 
+    body: 'Josefin Sans, B612', 
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'B612, sans-serif',
+    heading: 'Julius Sans One, B612, sans-serif',
     monospace: 'Menlo, monospace',
   },
   fontSizes: [
@@ -337,3 +337,5 @@ export default {
     },
   },
 };
+
+export default theme
