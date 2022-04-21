@@ -104,6 +104,7 @@ const styles = {
     width: '100%',
   },
   logo: {
+    pt:22,
     ml: 30,
     mb: 45,
   },

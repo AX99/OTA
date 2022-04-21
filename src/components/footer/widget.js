@@ -13,6 +13,7 @@ const Widget = ({ title, items, open, toggleHandle}) => {
             {icon && <Image src={icon} alt={label} />}
             <Link
               path={path}
+              //Hardcode path from footer.data.js for contactform
               onClick={path === "#!" && toggleHandle}
               key={i}
               label={label}

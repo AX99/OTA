@@ -2,7 +2,6 @@
 import { jsx, Box, Text, Container } from "theme-ui";
 // import Logo from 'components/logo';
 import logo from "assets/images/icons/favicon.png";
-import { Link } from "components/link";
 import Widget from "./widget";
 import { menuItems } from "./footer.data";
 import { rgba } from "polished";
@@ -18,21 +17,31 @@ export default function Footer({ open, toggleHandle }) {
               <img src={logo} sx={styles.image} alt="logo" />
             </Box>
             <Box sx={styles.terms}>
-              <Link path="https://www.privacypolicies.com/live/6eeb2257-3d89-458b-9f31-80d563401a7b"
-                target="_blank">Terms of use</Link>
+              <a
+                href="https://www.privacypolicies.com/live/6eeb2257-3d89-458b-9f31-80d563401a7b"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Terms of use
+              </a>
               <Text as="span">|</Text>
-              <Link path="https://www.privacypolicies.com/live/924dc302-7689-432a-9f1d-519380ff5092"
-                target="_blank">Privacy</Link>
+              <a
+                href="https://www.privacypolicies.com/live/924dc302-7689-432a-9f1d-519380ff5092"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy
+              </a>
             </Box>
             <Text as="p" sx={styles.copyright}>
               Website by{" "}
-              <Link
-                path="https://ax99.tech"
+              <a
+                href="https://ax99.tech"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 AX99
-              </Link>{" "}
+              </a>{" "}
               | {new Date().getFullYear()}
             </Text>
             <Box sx={styles.copyright}>
@@ -117,7 +126,7 @@ const styles = {
   },
   address: {
     color: rgba("#0F2137", 0.6),
-    fontSize: ["10px"],
+    fontSize: ["12px"],
     textAlign: ["center", null, "right"],
   },
   copyright: {

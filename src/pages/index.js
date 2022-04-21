@@ -9,7 +9,6 @@ import "@material-tailwind/react/tailwind.css";
 import "rc-tabs/assets/index.css";
 import "swiper/swiper-bundle.min.css";
 import CookieConsent from "react-cookie-consent";
-import { Link } from "components/link";
 
 export default function IndexPage() {
   return (
@@ -22,17 +21,18 @@ export default function IndexPage() {
       <CookieConsent
         buttonText="I Agree"
         cookieName="cookieAgreement"
-        debug={true}
         overlay={true}
       >
         We use cookies on this website to enhance your user experience. By
         continuing on this website you are agreeing to the use of these cookies.{" "}
-        <Link
-          path="https://www.privacypolicies.com/live/2419c67c-502a-4c72-a39c-29efa479a217"
+        <a
+          href="https://www.privacypolicies.com/live/2419c67c-502a-4c72-a39c-29efa479a217"
           target="_blank"
+          rel="noopener noreferrer"
+          sx={{textDecoration: "underline"}}
         >
           Click to view our Cookies Policy
-        </Link>
+        </a>
         .
       </CookieConsent>
     </Layout>
