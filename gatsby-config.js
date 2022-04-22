@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/OTA",
+  pathPrefix: '/OTA',
   siteMetadata: {
     title: `One Twelve Agency - Music-led Brand Partnerships Agency`,
     description: `Music-led brand partnerships agency properly representing real and diverse lifestyles and cultures`,
@@ -7,7 +7,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-theme-ui`,
-    'gatsby-plugin-resolve-src',
+    `gatsby-plugin-resolve-src`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,34 +21,30 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `One Twelve Agency`,
+        short_name: `OTa`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#C8ADA7`,
         display: `minimal-ui`,
         icon: `src/assets/images/icons/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        google: {
-          families: ['DM Sans', 'Josefin Sans', 'Julius Sans One'],
-        },
+        fonts: [
+          `Josefin Sans`,
+          `Julius Sans One\:300,400,500,700`, // you can also specify font weights and styles
+        ],
+        display: 'block',
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-mailchimp',
-    //   options: {
-    //     endpoint: '', // add your MC list endpoint here; see instructions from gatsby's website
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.onetwelveagency.com',
-        sitemap: 'https://www.onetwelveagency.com/sitemap.xml',
+        sitemap: 'https://www.onetwelveagency.com/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Divider } from "theme-ui";
+import { jsx, Box, Container, Image } from "theme-ui";
 import Tabs, { TabPane } from "rc-tabs";
 import { rgba } from "polished";
 import Grid from "@mui/material/Grid";
@@ -31,8 +31,7 @@ const Work = () => {
           ))}
         </Tabs>
       </Container>
-      <Divider my={8} />
-      <Container xs={12}>
+      <Container xs={12} sx={{my: 8}}>
         <Grid container spacing={2} sx={styles.grid} alignItems="center">
           {brands?.map((item, i) => (
             <Grid key={i} item xs={4} sm={2.4} md={2.4}>
@@ -41,7 +40,6 @@ const Work = () => {
           ))}
         </Grid>
       </Container>
-      <Divider mt={8} />
     </Box>
   );
 };
@@ -51,7 +49,7 @@ export default Work;
 const styles = {
   container: {
     maxWidth: ["95%", null, null, null, null],
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
   },
   image: {
     maxWidth: ["80%", null, "70%", "50%"],
@@ -63,16 +61,16 @@ const styles = {
     }
   },
   sectionHead: {
-    pt: [7, 7, 7, 9, 9, 9, 9],
+    pt: [8],
     pb: [3, null, null, 5],
     margin: "auto",
     h2: {// textDecoration: 'underline #C8ADA7',
     }
   },
   section: {
-    pt: [11, 11, 11, 8],
+    pt: [8],
     backgroundColor: rgba('#C8ADA7', 0.5),
-    pb: [8, null, null, 9, null, 11],
+    pb: [8],
     minHeight: "100vh"
   },
   tabs: {

@@ -13,8 +13,8 @@ const data = [
   {
     id: 1,
     icon: icon1,
-    title: "Culture Led Partnerships",
-    description: `Creating relevant and authentic influencer/celebrity campaigns, PR and events for brands.`,
+    title: "Brand Partnerships",
+    description: `Creating culturally relevant and authentic influencer/celebrity campaigns, PR and events for brands`,
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const data = [
     id: 4,
     icon: icon3,
     title: "ED&I Consultancy",
-    description: `Equity, Diversity & Inclusion Partnerships, ensuring a brand's marketing is truly representative of the lifestyles & cultures they want to portray.`,
+    description: `Ensuring a brand's marketing is truly representative of the lifestyles & cultures they want to portray`,
   },
 ];
 
@@ -42,7 +42,7 @@ const Services = () => {
         <SectionHeading
           sx={styles.heading}
           title="What We Do"
-          description="Rather than being a trend, we live and breathe inclusion and this is at the forefront of everything One Twelve Agency stands for."
+          description="RATHER THAN BEING A TREND, WE LIVE AND BREATHE INCLUSION AND THIS IS AT THE FOREFRONT OF EVERYTHING ONE TWELVE AGENCY STANDS FOR."
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
@@ -88,19 +88,18 @@ const styles = {
     margin: ["20px", "10px"]
   },
   section: {
-    pt: [11, 11, 11, 12, 12, 12, 14],
+    pt: [12],
     pb: [7, 7, 7, 9, 9, 10, 11],
     // borderBottom: '1px solid #D9E0E7',
     minHeight: "95vh",
   },
   heading: {
-    maxWidth: [null, null, null, 455, 660],
     mb: [8, null, null, 8, null, 9, 12],
     h2: {
       // textDecoration: "underline #C8ADA7",
     },
     p: {
-      fontWeight: [480],
+      maxWidth: [null, null, null, "none"],
     }
   },
   contentWrapper: {

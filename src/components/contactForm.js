@@ -1,41 +1,55 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
+import { jsx, Image } from "theme-ui";
+// import Typography from "@mui/material/Typography";
+import Dialog from "@mui/material/Dialog";
+import close from "assets/images/icons/close.png";
 
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 800,
-  height: 600,
-  backgroundColor: "#fff",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
+const styles = {
+  dialog: {
+    position: "absolute",
+    height: "100%",
+  },
+  closeButton: {
+    alignItems: "center",
+    backgroundColor: "transparent",
+    border: 0,
+    cursor: "pointer",
+    display: "flex",
+    p: 0,
+  },
+  close: {
+    position: "absolute",
+    top: 2,
+    left: 2,
+    zIndex: "10000",
+  },
 };
 
-export default function ContactForm({open, toggleHandle}) {
+export default function ContactForm({ open, toggleHandle }) {
   return (
     <div>
-      {/* <Button onClick={toggleHandle} variant="text">Contact</Button> */}
-      <Modal
+      <Dialog
         open={open}
         onClose={toggleHandle}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        aria-labelledby="modal-contact-form"
+        aria-describedby="modal with contact form"
+        fullWidth={true}
+        maxWidth="lg"
+        children={true}
+        PaperProps={{ sx: { width: ["85%", "60%", "55%", "45%"], height: "100%" } }}
+        
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Contact Form Here
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
-      </Modal>
+          <button onClick={toggleHandle} sx={styles.closeButton}>
+            <Image src={close} sx={styles.close} alt="close" />
+          </button>
+        <iframe
+            title="contactForm"
+            width={"100%"}
+            height={"100%"}
+            className="rounded-lg"
+            src="https://us14.list-manage.com/contact-form?u=1dc24a12c61cee8b5e22f1de7&form_id=bc1aa3e69046ef6d31916dd52b764099"
+          ></iframe>
+      </Dialog>
     </div>
   );
 }

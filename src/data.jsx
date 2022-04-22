@@ -7,13 +7,14 @@ import asos  from "./assets/images/logos/asos2.png";
 import converse  from "./assets/images/logos/converse2.png";
 import bacardi  from "./assets/images/logos/bacardi.png";
 import hp1  from "./assets/images/logos/hp12.png";
-import lv  from "./assets/images/logos/lv2.png";
+import lv  from "./assets/images/logos/lv5.png";
+import lvtab  from "./assets/images/logos/lv2.png";
 import hennessy from "./assets/images/logos/hennessy2.png"
 import lut from "./assets/images/logos/linkup2.png"
 
 import lut1 from "./assets/images/work images/lut.png"
-import lv1 from "./assets/images/work images/lv.png"
-import hennessy1 from "./assets/images/work images/hennessy.png"
+import lv1 from "./assets/images/work images/LV resized.png"
+import hennessy1 from "./assets/images/work images/hennessy resize.png"
 
 const data = [
   {
@@ -39,7 +40,7 @@ const data = [
   },
   {
     id: 2,
-    logo: lv,
+    logo: lvtab,
     img: lv1,
     brandName: "Louis Vuitton",
     name: "Louis Vuitton Music Series",
@@ -134,9 +135,9 @@ export const brands = [
 ]
 
 export const aboutInfo = [
-  'Data and Insight-Driven',
-  'Authentic & Creative Story-telling',
-  'Content that Entertains',
   'Culturally Relevant Campaigns',
+  'Authentic & Creative Storytelling',
+  'Content that Entertains',
+  'Data and Insight-Driven',
 ]
 

@@ -19,28 +19,29 @@ export default Service;
 
 const styles = {
   serviceItem: {
-    display: [null, null, null, null, null, 'flex'],
+    // display: [null, null, null, null, null, 'flex']
+    display: [null, null, null, null, null],
     textAlign: ['center', null, null, null, null, 'left'],
     mb: [4, null, null, null, null, 0],
   },
   figure: {
     minWidth: [88, null, null, null, null, 70, 88],
     // mr: [null, null, null, null, null, 30],
-    mb: [2, null, null, null, null, 0],
+    mb: [2, null, null, null, null,],
     textAlign: "-webkit-center",
     img: {
-      maxWidth: [42, null, null, 60, 70, '80%'],
+      maxWidth: [42, null, null, 60, 70, "25%"],
     },
   },
   content: {
     h3: {
-      color: 'heading',
+      color: 'primary',
       fontWeight: 700,
       fontFamily: 'heading',
       fontSize: [2, null, null, 17, 3],
       lineHeight: [1.68],
       textAlign: 'center',
-      // textDecoration: 'underline #C8ADA7',
+      // textDecoration: 'underline #02073E',
     },
     p: {
       fontSize: [1, null, null, null, 2],
