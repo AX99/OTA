@@ -33,22 +33,22 @@ function AboutUs() {
       <Box sx={styles.section}>
         <SectionHeading
           title="ABOUT US"
-          description="Founded by Black & Brown WOC who have a true understanding of the lifestyles and cultures associated with Gen Z marketing and relevant subcultures, alongside a passion to see this properly represented"
+          description="FOUNDED BY BLACK & BROWN WOC WHO HAVE A TRUE UNDERSTANDING OF THE LIFESTYLES AND CULTURES ASSOCIATED WITH GEN Z MARKETING AND RELEVANT SUBCULTURES, ALONGSIDE A PASSION TO SEE THIS PROPERLY REPRESENTED"
           sx={styles.heading}
         />
       </Box>
       <Container>
         <Grid container alignItems="center" sx={styles.container}>
           <Grid item xs={12} lg={5} sx={styles.portrait}>
-            {staff?.map((item) => (
-              <Profile item={item} />
+            {staff?.map((item, i) => (
+              <Profile key={i} item={item} />
             ))}
           </Grid>
           <Grid item xs={12} lg={7} sx={styles.grid}>
             <Text as="p" variant="body2" color="text" px={8} mb={2}>
-              G and Hannah have over 15 years combined experience working in
+              With over 15 years combined experience working in
               marketing and advertising and seeing the lack of interest in
-              authentic cultural marketing decided to set up One Twelve Agency
+              authentic cultural marketing, we decided to set up One Twelve Agency
               to truly make a difference.
             </Text>
 
@@ -81,8 +81,7 @@ const styles = {
   heading: {
     mb: [6, null, null, null],
     p: {
-      fontWeight: [480],
-      maxWidth: ["75%", null, null, "none"],
+      maxWidth: [null, null, null, "none"],
     },
   },
   figure: {
@@ -94,7 +93,7 @@ const styles = {
     },
   },
   section: {
-    pt: [7, 7, 7],
+    pt: [8],
     pb: [3, 3, 6],
     maxWidth: ["95%", null, null, null, "100%"],
     margin: "auto",

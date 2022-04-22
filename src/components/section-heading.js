@@ -17,7 +17,7 @@ export default SectionHeading;
 const styles = {
   heading: {
     textAlign: 'center',
-    maxWidth: 660,
+    maxWidth: 700,
     margin: ['0 auto 60px'],
   },
   title: {
@@ -34,6 +34,8 @@ const styles = {
   },
   description: {
     color: 'heading',
+    fontFamily: 'heading',
+    fontWeight: [500],
     fontSize: [1, null, null, 2],
     lineHeight: [1.58, 1.58, 1.58, 2.2],
     maxWidth: ['none', 'none', 'none', 'none', 490],

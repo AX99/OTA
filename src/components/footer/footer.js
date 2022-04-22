@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Box, Text, Container } from "theme-ui";
-// import Logo from 'components/logo';
 import logo from "assets/images/icons/favicon.png";
 import Widget from "./widget";
 import { menuItems } from "./footer.data";
@@ -126,8 +125,9 @@ const styles = {
   },
   address: {
     color: rgba("#0F2137", 0.6),
-    fontSize: ["12px"],
+    fontSize: ["13px"],
     textAlign: ["center", null, "right"],
+    fontFamily: "heading",
   },
   copyright: {
     color: rgba("#0F2137", 0.6),
@@ -143,6 +143,11 @@ const styles = {
         textDecoration: "none",
       },
     },
+    p: {
+      color: rgba("#0F2137", 0.6),
+      fontSize: ["13px"],
+      fontFamily: "heading",
+    }
   },
   widget: {
     display: [null, null, null, null, "block"],

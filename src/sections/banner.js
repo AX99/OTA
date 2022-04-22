@@ -75,7 +75,7 @@ const styles = {
   },
   contentWrapper: {
     display: "flex",
-    height: ["60vh"],
+    height: ["80vh",null,  "60vh"],
     pt: [18],
     alignItems: "center",
     flexDirection: "column",
@@ -85,12 +85,9 @@ const styles = {
     },
   },
   heading: {
-    my: [30],
+    mt: [40, null, 30],
+    mb: ["50%", null, 40],
     maxWidth:["unset"],
-    h2: {
-      fontSize: [8, null, null, 8, 9, 10, 11],
-      lineHeight: [1.57],
-    },
     p: {
       // fontSize: [1, null, null, 3],
       lineHeight: [1.87, null, null, 2.33],

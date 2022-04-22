@@ -21,7 +21,7 @@ export default function Header({ open, toggleHandle }) {
                   <Box as="ul" sx={styles.navList}>
                     {menuItems.map(({ path, label }, i) => (
                       <li key={i}>
-                        <NavLink path={path} label={label} />
+                        <NavLink key={i} path={path} label={label} />
                       </li>
                     ))}
                   </Box>

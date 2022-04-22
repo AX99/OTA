@@ -11,10 +11,10 @@ export default function WorkTab({ data, mainTab }) {
 
   return (
     <Tab sx={{height: '250px'}}>
-      <TabList color="none" className="shadow-xl flex-wrap md:flex-nowrap">
+      <TabList color="none" sx={{fontFamily: 'heading'}} className="shadow-xl flex-wrap md:flex-nowrap">
         {tabNames.map((item, i) => (
           <TabItem
-            className="cursor-pointer"
+            className="cursor-pointer uppercase"
             key={i}
             onClick={() => {
               setOpenTab(item.toLowerCase());
@@ -29,6 +29,8 @@ export default function WorkTab({ data, mainTab }) {
             }}
             ripple="light"
             active={openTab === item.toLowerCase() ? true : false}
+
+            
           >
             {item}
           </TabItem>

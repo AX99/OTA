@@ -6,7 +6,7 @@ const Profile = ({ item }) => {
     <Box as="figure" sx={styles.figure}>
       <Image src={item?.pic} alt="logo" />
       <Text as="p">{item?.name}</Text>
-      <Text as="p">{item?.title}</Text>
+      {/* <Text as="p">{item?.title}</Text> */}
     </Box>
   );
 };
@@ -25,7 +25,7 @@ const styles = {
     // mr: 80,
     p: {
         fontFamily: 'heading',
-        fontWeight: [400, null, null, null, 700],
+        fontWeight: [700],
         fontSize: [16, null, null, 18],
     },
 },

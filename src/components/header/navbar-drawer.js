@@ -45,6 +45,7 @@ const DrawerNav = () => {
           {menuItems.map(({ path, label }, i) => (
             <Box as="li" key={i}>
               <Link
+                key={i}
                 activeClass="active"
                 to={path}
                 spy={true}
