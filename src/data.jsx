@@ -13,8 +13,8 @@ import hennessy from "./assets/images/logos/hennessy2.png"
 import lut from "./assets/images/logos/linkup2.png"
 
 import lut1 from "./assets/images/work images/lut.png"
-import lv1 from "./assets/images/work images/lv.png"
-import hennessy1 from "./assets/images/work images/hennessy.png"
+import lv1 from "./assets/images/work images/LV resized.png"
+import hennessy1 from "./assets/images/work images/hennessy resize.png"
 
 const data = [
   {
