@@ -99,8 +99,8 @@ export const brands = [
   },
   {
     id: 4,
-    icon: bacardi,
-    title: "Bacardi",
+    icon: hennessy,
+    title: "Hennessy",
   },
   {
     id: 5,

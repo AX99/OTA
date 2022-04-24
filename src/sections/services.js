@@ -14,13 +14,13 @@ const data = [
     id: 1,
     icon: icon1,
     title: "Brand Partnerships",
-    description: `Creating culturally relevant and authentic influencer/celebrity campaigns, PR and events for brands`,
+    description: `Creating culturally relevant and authentic talent campaigns, PR and events for brands`,
   },
   {
     id: 3,
     icon: icon2,
     title: "Music Partnerships",
-    description: `Leveraging the power of social, influencers and PR to amplify music projects`,
+    description: `Leveraging the power of social, talent and PR to amplify music projects`,
   },
   {
     id: 4,
