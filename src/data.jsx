@@ -99,13 +99,13 @@ export const brands = [
   },
   {
     id: 4,
-    icon: hennessy,
-    title: "Hennessy",
+    icon: converse,
+    title: "Converse",
   },
   {
     id: 5,
-    icon: converse,
-    title: "Converse",
+    icon: hennessy,
+    title: "Hennessy",
   },
   {
     id: 6,
