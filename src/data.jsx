@@ -4,7 +4,7 @@ import amazon1 from "./assets/images/logos/amazon12.png";
 import chivas from "./assets/images/logos/chivas112.png";
 import chivastab from "./assets/images/logos/chivasm.png";
 import ss from "./assets/images/logos/ss.png";
-import tf from "./assets/images/logos/tf2.png";
+import swim from "./assets/images/logos/sososwim.png";
 import mac from "./assets/images/logos/mac2.png";
 import asos from "./assets/images/logos/asos2.png";
 import converse from "./assets/images/logos/converse2.png";
@@ -16,12 +16,13 @@ import lut from "./assets/images/logos/linkup2.png";
 import lut1 from "./assets/images/work images/lut.png";
 import lv1 from "./assets/images/work images/LV resized.png";
 import hennessy1 from "./assets/images/work images/hennessy resize.png";
+import chivas1 from "./assets/images/work images/chivas.png";
 
 const data = [
   {
     id: 1,
     logo: chivastab,
-    img: chivastab,
+    img: chivas1,
     brandName: "Chivas Regal",
     name: "Chivas Regal",
     project: [
@@ -157,8 +158,8 @@ export const brands = [
   },
   {
     id: 10,
-    icon: tf,
-    title: "Tom Ford",
+    icon: swim,
+    title: "SoSo Swim",
   },
 ];
 
