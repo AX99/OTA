@@ -4,6 +4,7 @@ import logo from "assets/images/icons/favicon.png";
 import Widget from "./widget";
 import { menuItems } from "./footer.data";
 import { rgba } from "polished";
+import download from "assets/client terms.pdf"
 
 export default function Footer({ open, toggleHandle }) {
   return (
@@ -30,6 +31,14 @@ export default function Footer({ open, toggleHandle }) {
                 rel="noopener noreferrer"
               >
                 Privacy
+              </a>
+              <Text as="span">|</Text>
+              <a
+                href={download}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Client Terms
               </a>
             </Box>
             <Text as="p" sx={styles.copyright}>
