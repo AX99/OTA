@@ -14,11 +14,13 @@ const staff = [
     name: "G",
     title: "Co-Founder",
     pic: G,
+    linkedin: "http://linkedin.com"
   },
   {
     name: "Hannah",
     title: "Co-Founder",
     pic: Hannah,
+    linkedin: "http://linkedin.com"
   },
 ];
 
