@@ -67,7 +67,7 @@ const styles = {
     maxWidth: ["80%", null, "70%", "50%"],
     margin: "auto",
     display: "flex",
-    filter: "grayscale(100%)",
+    filter: "brightness(0.1)",
     ":hover": {
       filter: "unset",
     },

@@ -5,7 +5,7 @@ import chivas from "./assets/images/logos/chivas112.png";
 import chivastab from "./assets/images/logos/chivasm.png";
 import ss from "./assets/images/logos/ss.png";
 import swim from "./assets/images/logos/sososwim.png";
-import mac from "./assets/images/logos/mac2.png";
+import cantu from "./assets/images/logos/cantu.png";
 import asos from "./assets/images/logos/asos2.png";
 import converse from "./assets/images/logos/converse2.png";
 import lv from "./assets/images/logos/lv5.png";
@@ -128,28 +128,28 @@ export const brands = [
   },
   {
     id: 4,
+    icon: cantu,
+    title: "Cantu",
+  },
+  {
+    id: 5,
     icon: chivas,
     title: "Chivas Regal",
   },
   {
-    id: 5,
+    id: 6,
     icon: converse,
     title: "Converse",
   },
   {
-    id: 6,
+    id: 7,
     icon: hennessy,
     title: "Hennessy",
   },
   {
-    id: 7,
+    id: 8,
     icon: lv,
     title: "LV",
-  },
-  {
-    id: 8,
-    icon: mac,
-    title: "Mac",
   },
   {
     id: 9,
