@@ -17,6 +17,7 @@ import lut1 from "./assets/images/work images/lut.png";
 import lv1 from "./assets/images/work images/LV resized.png";
 import hennessy1 from "./assets/images/work images/hennessy resize.png";
 import chivas1 from "./assets/images/work images/chivas.png";
+import sososwim from "./assets/images/work images/sososwim.jpeg"
 
 const data = [
   {
@@ -45,6 +46,27 @@ const data = [
   },
   {
     id: 2,
+    logo: swim,
+    img: sososwim,
+    brandName: "SoSo Swim",
+    name: "Hennessy at Abbey Road Studios with ProducerWez",
+    project: [
+      {
+        objective:
+          "SoSo Swim is a sustainable swimwear brand. We were tasked with driving brand awareness through partnering with influencers and then converting that awareness to consideration and purchase intent. We were also briefed to create a large bank of content for SoSo Swim to use across socials, email marketing, the website and paid ads. ",
+      },
+      {
+        solution:
+          "We selected key paid micro influencers within the slow fashion, sustainability and conscious travel niches to partner with SoSo Swim over a three month period to post monthly Instagram content with their SoSo Swim costume. We worked with a diverse group of influencers who showcased the versatility of the swimsuit on different body types, in different locations for example on the beach, in a lake, by the pool, as well as how to style it as part of an outfit for drinks, date night etc. As audiences were seeing the swimsuit repeatedly in grid posts and reels over a period of 3 months, this drove consideration and purchase intent. To build out a strong content bank, we worked with smaller influencers on a gifted basis.",
+      },
+      {
+        result:
+          "As well as over 60 pieces of reusable content, the campaign garnered a 7% engagement rate. By working with influencers over several months we were able to capture social sentiment and measure the fact that brand awareness was shifting to consideration and purchase intent over the campaign period with comments such as “I need this swimsuit ASAP”. This also allowed the influencers to share SoSo Swim’s sustainable and ethical credentials with their audiences over the campaign period allowing target consumers to really understand the SoSo Swim brand through the influencers’ ongoing messaging.",
+      },
+    ],
+  },
+  {
+    id: 3,
     logo: hennessy,
     img: hennessy1,
     brandName: "Hennessy",
@@ -65,7 +87,7 @@ const data = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     logo: lut,
     img: lut1,
     brandName: "Linkup TV",
@@ -86,7 +108,7 @@ const data = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     logo: lvtab,
     img: lv1,
     brandName: "Louis Vuitton",
