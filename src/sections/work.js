@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Heading } from "theme-ui";
+import { jsx, Box, Container, Image } from "theme-ui";
 import Tabs, { TabPane } from "rc-tabs";
 import { rgba } from "polished";
 import Grid from "@mui/material/Grid";
@@ -26,8 +26,10 @@ const Work = () => {
           {data?.map((item, i) => (
             <TabPane
               key={i}
+              // If using Heading component, import from theme-ui
               // tab={<Heading as="h4">{item.brandName}</Heading>}
               tab={<Image sx={styles.tabs.image} src={item.logo} alt="brand"/>}
+              forceRender = "true"              
             >
               <Box sx={{ minWidth: "unset" }}>
                 <WorkTab data={data} mainTab={i} />
@@ -89,7 +91,8 @@ const styles = {
   tabs: {
     border: "none",
     image: {
-      maxWidth: ["30%", null, null, "20%"],
+      maxWidth: ["50%", null, null, "40%"],
+      filter: "brightness(0.1)",
     },
     ".rc-tabs-content-holder": {
       minHeight: "400px",
